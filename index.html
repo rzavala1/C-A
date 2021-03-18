@@ -7,26 +7,147 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>C&A</title>
+    <title>C&A Moda México</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <div></div>
-            <div>
-                <img src="assets/icons/helpIcon.svg">
+        <div class="row information_header">
+            <div class="col l2 offset-l10 information_main">
+                <div class="col atribute_information">
+                    <img src="assets/icons/helpIcon.svg">
+                    <div class="text_info">Ayuda</div>
+                </div>
+                <div class="col atribute_information">
+                    <img src="assets/icons/pointIcon.svg">
+                    <div class="text_info">Tienda</div>
+                </div>
             </div>
-            <div></div>
+            <div class="information_promo s12">
+                <div>
+                    <img src="assets/icons/arrowLeftInfo.svg">
+                </div>
+                <div class="text_promo">
+                    Conoce nuestras NUEVAS COLECCIONES con todas las tendencias de la temporada
+                </div>
+                <div>
+                    <img src="assets/icons/arrowRightInfo.svg">
+                </div>
+            </div>
+        </div>
+        <div id="menu_main" class="row">
+            <div class="col l7 area1">
+                <div>
+                    <image src="./assets/img/logo.svg" />
+                </div>
+                <div>
+                    Lo más nuevo
+                </div>
+                <div>
+                    Mujer
+                </div>
+                <div>
+                    Hombre
+                </div>
+                <div>
+                    Niño/a
+                </div>
+                <div>
+                    Zapatos & Accesorios
+                </div>
+                <div>
+                    Rebajas
+                </div>
+            </div>
+            <div class="col l4 area2">
+                <div class="search">
+                    <img src="assets/icons/search.svg">
+                    <input type="text" placeholder="Buscar" />
+                </div>
+                <div class="hello">
+                    ¡Hola! Mauricio
+                </div>
+                <div>
+                    <img src="assets/icons/user.svg">
+                </div>
+                <div class="favorite">
+                    <img src="assets/icons/favorite.svg">
+                </div>
+                <div class="favorite">
+                    <img src="assets/icons/cart.svg">
+                </div>
+            </div>
+        </div>
+        <div id="menu_main_mobile" class="row">
+            <div class="col s1 menu">
+                <div>
+                    <image src="assets/icons/menuMobile.png" />
+                </div>
+            </div>
+            <div class="col s12 logo">
+                <div>
+                    <image src="./assets/img/logo.svg" />
+                </div>
+            </div>
+            <div class="col s3 offset-s8 menu cart">
+                <div class="col s1">
+                    <img src="assets/icons/search.svg">
+                </div>
+                <div class="col s1">
+                    <img src="assets/icons/cart.svg">
+                </div>
+            </div>
         </div>
     </header>
     <main>
-
+        <div id="slider" class="row">
+            <div class="col s12 l12 slider_main">
+                <div class="controls">
+                    <div class="arrowLeft">
+                        <image src="assets/icons/arrowLeftSlider.svg">
+                    </div>
+                    <div class="arrowRight">
+                        <image src="assets/icons/arrowRightSlider.svg">
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-item" href="#one!">
+                        <image src="assets/img/slider1.png">
+                            <div class="text_item">Colección Primavera Verano</div>
+                            <div class="btn_item">
+                                <div>
+                                    NUEVAS COLECCIONES
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item" href="#one!">
+                        <image src="assets/img/slider1.png">
+                            <div class="text_item">Colección Primavera Verano</div>
+                            <div class="btn_item">
+                                <div>
+                                    NUEVAS COLECCIONES
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item" href="#one!">
+                        <image src="assets/img/slider1.png">
+                            <div class="text_item">Colección Primavera Verano</div>
+                            <div class="btn_item">
+                                <div>
+                                    NUEVAS COLECCIONES
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>
