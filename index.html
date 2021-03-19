@@ -35,45 +35,46 @@
                 </div>
             </div>
         </div>
-        <div id="menu_main" class="row">
+        <div id="menu_main" class="row main_header">
             <div class="col l7 area1">
-                <div>
+                <div class="menu_logo">
                     <image src="./assets/img/logo.svg" />
                 </div>
-                <div>
+                <div class="control option">
                     Lo más nuevo
                 </div>
-                <div>
+                <div class="control option option2">
                     Mujer
                 </div>
-                <div>
+                <div class="control option">
                     Hombre
                 </div>
-                <div>
+                <div class="control option">
                     Niño/a
                 </div>
-                <div>
+                <div class="control option">
                     Zapatos & Accesorios
                 </div>
-                <div>
+                <div class="control option">
                     Rebajas
                 </div>
             </div>
             <div class="col l4 area2">
                 <div class="search">
                     <img src="assets/icons/search.svg">
-                    <input type="text" placeholder="Buscar" />
+                    <input id="search_main" type="text" placeholder="Buscar" />
+                    <img class="close_search" src="assets/icons/closeSearch.svg">
                 </div>
-                <div class="hello">
+                <div class="hello control">
                     ¡Hola! Mauricio
                 </div>
-                <div>
+                <div class="control">
                     <img src="assets/icons/user.svg">
                 </div>
-                <div class="favorite">
+                <div class="favorite control">
                     <img src="assets/icons/favorite.svg">
                 </div>
-                <div class="favorite">
+                <div class="favorite control">
                     <img src="assets/icons/cart.svg">
                 </div>
             </div>
@@ -81,20 +82,425 @@
         <div id="menu_main_mobile" class="row">
             <div class="col s1 menu">
                 <div>
-                    <image src="assets/icons/menuMobile.png" />
+                    <image class="showMenu" src="assets/icons/menuMobile.svg" />
                 </div>
             </div>
-            <div class="col s12 logo">
+            <div class="logo">
                 <div>
                     <image src="./assets/img/logo.svg" />
                 </div>
             </div>
-            <div class="col s3 offset-s8 menu cart">
+            <div class="col s3 menu cart">
                 <div class="col s1">
-                    <img src="assets/icons/search.svg">
+                    <img class="searchMobile" src="assets/icons/search.svg">
                 </div>
                 <div class="col s1">
-                    <img src="assets/icons/cart.svg">
+                    <img class="cartUser" src="assets/icons/cart.svg">
+                </div>
+            </div>
+        </div>
+        <div id="seach_cont" class="row">
+            <div class="row">
+                <div class="col l3 suggestions">
+                    <div class="suggestions_title">
+                        Sugerencias principales:
+                    </div>
+                    <span>
+                        Jeans
+                    </span>
+                    <div>
+                        Jeans para Hombre
+                    </div>
+                    <div>
+                        Jeans para mujer
+                    </div>
+                </div>
+                <div class="col l9">
+                    <div class="col l3">
+                        <div class="item_scroll_main">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/scroll1.png">
+                                    <span class="card-title title_scroll">
+                                        <span class="badge instruccion">Nuevo</span>
+                                    </span>
+                                    <span class="fovorite_scroll">
+                                        <img src="assets/icons/favorite_heart.svg">
+                                    </span>
+                                </div>
+                                <div class="card-content card-content_scroll">
+                                    <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                    <div class="colors_scroll_cont">
+                                        <div class="colors_scroll green_scroll"></div>
+                                        <div class="colors_scroll blue_scroll margin_left"></div>
+                                        <div class="colors_scroll gray_scroll margin_left"></div>
+                                        <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                    </div>
+                                    <div class="price_scroll">
+                                        <div class="real_price">
+                                            $599.00
+                                        </div>
+                                        <div class="sale_price margin_left">
+                                            $399.00
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l3">
+                        <div class="item_scroll_main">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/scroll1.png">
+                                    <span class="card-title title_scroll">
+                                        <span class="badge instruccion">Nuevo</span>
+                                    </span>
+                                    <span class="fovorite_scroll">
+                                        <img src="assets/icons/favorite_heart.svg">
+                                    </span>
+                                </div>
+                                <div class="card-content card-content_scroll">
+                                    <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                    <div class="colors_scroll_cont">
+                                        <div class="colors_scroll green_scroll"></div>
+                                        <div class="colors_scroll blue_scroll margin_left"></div>
+                                        <div class="colors_scroll gray_scroll margin_left"></div>
+                                        <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                    </div>
+                                    <div class="price_scroll">
+                                        <div class="real_price">
+                                            $599.00
+                                        </div>
+                                        <div class="sale_price margin_left">
+                                            $399.00
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l3">
+                        <div class="item_scroll_main">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/scroll1.png">
+                                    <span class="card-title title_scroll">
+                                        <span class="badge instruccion">Nuevo</span>
+                                    </span>
+                                    <span class="fovorite_scroll">
+                                        <img src="assets/icons/favorite_heart.svg">
+                                    </span>
+                                </div>
+                                <div class="card-content card-content_scroll">
+                                    <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                    <div class="colors_scroll_cont">
+                                        <div class="colors_scroll green_scroll"></div>
+                                        <div class="colors_scroll blue_scroll margin_left"></div>
+                                        <div class="colors_scroll gray_scroll margin_left"></div>
+                                        <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                    </div>
+                                    <div class="price_scroll">
+                                        <div class="real_price">
+                                            $599.00
+                                        </div>
+                                        <div class="sale_price margin_left">
+                                            $399.00
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l3">
+                        <div class="item_scroll_main">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/scroll1.png">
+                                    <span class="card-title title_scroll">
+                                        <span class="badge instruccion">Nuevo</span>
+                                    </span>
+                                    <span class="fovorite_scroll">
+                                        <img src="assets/icons/favorite_heart.svg">
+                                    </span>
+                                </div>
+                                <div class="card-content card-content_scroll">
+                                    <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                    <div class="colors_scroll_cont">
+                                        <div class="colors_scroll green_scroll"></div>
+                                        <div class="colors_scroll blue_scroll margin_left"></div>
+                                        <div class="colors_scroll gray_scroll margin_left"></div>
+                                        <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                    </div>
+                                    <div class="price_scroll">
+                                        <div class="real_price">
+                                            $599.00
+                                        </div>
+                                        <div class="sale_price margin_left">
+                                            $399.00
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="menu_active" class="row">
+            <div class="row">
+                <div class="col l1">
+                    <div class="title_menu">
+                        Destacados
+                    </div>
+                    <div class="subtitle_menu">
+                        Nuevos lanzamientos
+                    </div>
+                    <div class="subtitle_menu">
+                        Lo más destacado
+                    </div>
+                    <div class="subtitle_menu">
+                        Tarjeta de Regalo
+                    </div>
+                </div>
+                <div class="col l1">
+                    <div class="title_menu">
+                        Ropa
+                    </div>
+                    <div class="subtitle_menu">
+                        Abrigos y chamarras
+                    </div>
+                    <div class="subtitle_menu">
+                        Blusas y tops
+                    </div>
+                    <div class="subtitle_menu">
+                        Faldas
+                    </div>
+                    <div class="subtitle_menu">
+                        Camisas
+                    </div>
+                    <div class="subtitle_menu">
+                        Playeras
+                    </div>
+                    <div class="subtitle_menu">
+                        Sudaderas
+                    </div>
+                    <div class="subtitle_menu">
+                        Sweaters
+                    </div>
+                    <div class="subtitle_menu">
+                        Vestidos y monos
+                    </div>
+                </div>
+                <div class="col l1">
+                    <div class="title_menu">
+                        Zapatos
+                    </div>
+                    <div class="subtitle_menu">
+                        Sandalia
+                    </div>
+                    <div class="subtitle_menu">
+                        Botas
+                    </div>
+                    <div class="subtitle_menu">
+                        Tenis
+                    </div>
+                    <div class="subtitle_menu">
+                        Zapatillas
+                    </div>
+                </div>
+                <div class="col l1">
+                    <div class="title_menu">
+                        Accesorios
+                    </div>
+                    <div class="subtitle_menu">
+                        Activewear
+                    </div>
+                    <div class="subtitle_menu">
+                        Bolsos
+                    </div>
+                    <div class="subtitle_menu">
+                        Cinturones
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu_active_mobile">
+            <div class="row center">
+                <div clas="col s12">
+                    <image class="logo" src="./assets/img/logo.svg" />
+                </div>
+                <div class="close_menu_main">
+                    <img class="close_menu" src="assets/icons/close.svg">
+                </div>
+                <div class="col s12 collap_menu">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Lo más nuevo</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Mujer</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Hombre</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Niño/a</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Zapatos & Accesorios
+                                </div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Rebajas
+                                </div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header favorites_menu">
+                                <div class="col s6">Favoritos
+                                </div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/arrowMenu.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                    <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                    <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                    <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                    <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 option_help">
+                    <img src="assets/icons/helpBlack.svg">
+                    <div class="text_info">Ayuda</div>
+                </div>
+                <div class="col s6 option_stores">
+                    <img src="assets/icons/storesBlack.svg">
+                    <div class="text_info">Tiendas</div>
+                </div>
+                <div class="col s12">
+                    <div class="social">
+                        <div class="social_mobile">
+                            <div>
+                                <img src="assets/icons/facebook.svg">
+                            </div>
+                            <div>
+                                <img src="assets/icons/instagram.svg">
+                            </div>
+                            <div class="final">
+                                <img src="assets/icons/youTube.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 send_mobile">
+                    <div class="subBtn">Mi cuenta</div>
+                </div>
+                <div class="col s12 question_menu">
+                    ¿Aún no tienes cuenta? <span>Regístrate</span>
                 </div>
             </div>
         </div>
@@ -110,40 +516,614 @@
                         <image src="assets/icons/arrowRightSlider.svg">
                     </div>
                 </div>
-                <div class="carousel">
+                <div class="carousel carousel_scroll">
                     <div class="carousel-item" href="#one!">
-                        <image src="assets/img/slider1.png">
-                            <div class="text_item">Colección Primavera Verano</div>
-                            <div class="btn_item">
-                                <div>
-                                    NUEVAS COLECCIONES
-                                </div>
+                        <image src="assets/img/slider1.png" />
+                        <div class="text_item">Colección Primavera Verano</div>
+                        <div class="btn_item">
+                            <div>
+                                NUEVAS COLECCIONES
                             </div>
+                        </div>
                     </div>
                     <div class="carousel-item" href="#one!">
-                        <image src="assets/img/slider1.png">
-                            <div class="text_item">Colección Primavera Verano</div>
-                            <div class="btn_item">
-                                <div>
-                                    NUEVAS COLECCIONES
-                                </div>
+                        <image src="assets/img/slider1.png" />
+                        <div class="text_item">Colección Primavera Verano</div>
+                        <div class="btn_item">
+                            <div>
+                                NUEVAS COLECCIONES
                             </div>
+                        </div>
                     </div>
                     <div class="carousel-item" href="#one!">
-                        <image src="assets/img/slider1.png">
-                            <div class="text_item">Colección Primavera Verano</div>
-                            <div class="btn_item">
-                                <div>
-                                    NUEVAS COLECCIONES
+                        <image src="assets/img/slider1.png" />
+                        <div class="text_item">Colección Primavera Verano</div>
+                        <div class="btn_item">
+                            <div>
+                                NUEVAS COLECCIONES
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_main" class="row">
+            <div class="col s12 l6">
+                <div class="card padRight">
+                    <div class="card-image">
+                        <img src="assets/img/beachwear.png">
+                        <span class="card-title text_cont">
+                            <div class="text_card">Beachwear</div>
+                            <div class="btn_image_cont">
+                                <div class="btn_image">
+                                    <div>
+                                        VER MÁS
+                                    </div>
                                 </div>
                             </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card padLeft">
+                    <div class="card-image">
+                        <img src="assets/img/beachwear2.png">
+                        <span class="card-title text_cont">
+                            <div class="text_card">Beachwear</div>
+                            <div class="btn_image_cont">
+                                <div class="btn_image">
+                                    <div>
+                                        VER MÁS
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l12">
+                <div class="card cont_horizontal">
+                    <div class="card-image cont_horizontal">
+                        <img class="cont_horizontal" src="assets/img/beachwear3.png">
+                        <span class="card-title text_cont">
+                            <div class="text_card">Nuevas colecciones</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont_favorites_main row">
+            <div class="col s12 l12 title_favorites">
+                Los favoritos
+            </div>
+            <div class="col s12 m12 l12 fav_control">
+                <div class="arrowLeft_fav">
+                    <image src="assets/icons/arrowLeftSlider.svg">
+                </div>
+                <div class="carousel carousel_fovorites_main carousel-slider">
+                    <div class="row carousel-item carousel_fovorites_control">
+                        <div class="col l3 s12 element">
+                            <div class="item_scroll_main">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="assets/img/scroll1.png">
+                                        <span class="card-title title_scroll">
+                                            <span class="badge instruccion">Nuevo</span>
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                    </div>
+                                    <div class="card-content card-content_scroll">
+                                        <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                        <div class="colors_scroll_cont">
+                                            <div class="colors_scroll green_scroll"></div>
+                                            <div class="colors_scroll blue_scroll margin_left"></div>
+                                            <div class="colors_scroll gray_scroll margin_left"></div>
+                                            <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                        </div>
+                                        <div class="price_scroll">
+                                            <div class="real_price">
+                                                $599.00
+                                            </div>
+                                            <div class="sale_price margin_left">
+                                                $399.00
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l3 s12 element">
+                            <div class="item_scroll_main">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="assets/img/scroll1.png">
+                                        <span class="card-title title_scroll">
+                                            <span class="badge instruccion">Nuevo</span>
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                    </div>
+                                    <div class="card-content card-content_scroll">
+                                        <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                        <div class="colors_scroll_cont">
+                                            <div class="colors_scroll green_scroll"></div>
+                                            <div class="colors_scroll blue_scroll margin_left"></div>
+                                            <div class="colors_scroll gray_scroll margin_left"></div>
+                                            <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                        </div>
+                                        <div class="price_scroll">
+                                            <div class="real_price">
+                                                $599.00
+                                            </div>
+                                            <div class="sale_price margin_left">
+                                                $399.00
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l3 s12 element">
+                            <div class="item_scroll_main">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="assets/img/scroll1.png">
+                                        <span class="card-title title_scroll">
+                                            <span class="badge instruccion">Nuevo</span>
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                    </div>
+                                    <div class="card-content card-content_scroll">
+                                        <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                        <div class="colors_scroll_cont">
+                                            <div class="colors_scroll green_scroll"></div>
+                                            <div class="colors_scroll blue_scroll margin_left"></div>
+                                            <div class="colors_scroll gray_scroll margin_left"></div>
+                                            <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                        </div>
+                                        <div class="price_scroll">
+                                            <div class="real_price">
+                                                $599.00
+                                            </div>
+                                            <div class="sale_price margin_left">
+                                                $399.00
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row carousel-item carousel_fovorites_control">
+                        <div class="col l3 s12 element">
+                            <div class="item_scroll_main">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="assets/img/scroll1.png">
+                                        <span class="card-title title_scroll">
+                                            <span class="badge instruccion">Nuevo</span>
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                    </div>
+                                    <div class="card-content card-content_scroll">
+                                        <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                        <div class="colors_scroll_cont">
+                                            <div class="colors_scroll green_scroll"></div>
+                                            <div class="colors_scroll blue_scroll margin_left"></div>
+                                            <div class="colors_scroll gray_scroll margin_left"></div>
+                                            <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                        </div>
+                                        <div class="price_scroll">
+                                            <div class="real_price">
+                                                $599.00
+                                            </div>
+                                            <div class="sale_price margin_left">
+                                                $399.00
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l3 s12 element">
+                            <div class="item_scroll_main">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="assets/img/scroll1.png">
+                                        <span class="card-title title_scroll">
+                                            <span class="badge instruccion">Nuevo</span>
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                    </div>
+                                    <div class="card-content card-content_scroll">
+                                        <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                        <div class="colors_scroll_cont">
+                                            <div class="colors_scroll green_scroll"></div>
+                                            <div class="colors_scroll blue_scroll margin_left"></div>
+                                            <div class="colors_scroll gray_scroll margin_left"></div>
+                                            <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                        </div>
+                                        <div class="price_scroll">
+                                            <div class="real_price">
+                                                $599.00
+                                            </div>
+                                            <div class="sale_price margin_left">
+                                                $399.00
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l3 s12 element">
+                            <div class="item_scroll_main">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="assets/img/scroll1.png">
+                                        <span class="card-title title_scroll">
+                                            <span class="badge instruccion">Nuevo</span>
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                        <span class="fovorite_scroll">
+                                            <img src="assets/icons/favorite_heart.svg">
+                                        </span>
+                                    </div>
+                                    <div class="card-content card-content_scroll">
+                                        <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                        <div class="colors_scroll_cont">
+                                            <div class="colors_scroll green_scroll"></div>
+                                            <div class="colors_scroll blue_scroll margin_left"></div>
+                                            <div class="colors_scroll gray_scroll margin_left"></div>
+                                            <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                        </div>
+                                        <div class="price_scroll">
+                                            <div class="real_price">
+                                                $599.00
+                                            </div>
+                                            <div class="sale_price margin_left">
+                                                $399.00
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="arrowRight_fav">
+                    <image src="assets/icons/arrowRightSlider.svg">
+                </div>
+            </div>
+        </div>
+        <div class="row cont_suscribe">
+            <div class="col s12 l6">
+                <div class="text">
+                    Suscríbete a nuestro newsletter
+                </div>
+                <div class="subText">
+                    Sé el primero en conocer nuestras novedades y ofertas exclusivas
+                </div>
+                <div class="rect">
+                    <image src="assets/icons/rect.svg"></image>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="search input_send send_cont">
+                    <input type="text" placeholder="Escribe tu e-mail" />
+                    <div class="subBtn">ENVIAR</div>
+                </div>
+            </div>
+            <div class="col s12 l6 send_mobile">
+                <div class="col s12">
+                    <div class="search input_send">
+                        <input type="text" placeholder="Escribe tu e-mail" />
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="subBtn">ENVIAR</div>
+                </div>
+            </div>
+        </div>
+        <div class="cont_information">
+            <div class="row">
+                <div class="col l8 s12">
+                    <div class="card padRight">
+                        <div class="card-image image_content_info">
+                            <img src="assets/img/beachwear4.png">
+                            <span class="card-title text_cont">
+                                <div class="card_title_cont">
+                                    <div>
+                                        <div class="principal">Hombre</div>
+                                        <div class="sub_text">Comprar ahora</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l4 s12">
+                    <div class="card padLeft">
+                        <div class="card-image image_content_info">
+                            <img src="assets/img/beachwear5.png">
+                            <span class="card-title text_cont">
+                                <div class="card_title_cont">
+                                    <div>
+                                        <div class="principal">Niño/a</div>
+                                        <div class="sub_text">Comprar ahora</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l4 s12">
+                    <div class="card padRight">
+                        <div class="card-image image_content_info">
+                            <img src="assets/img/beachwear6.png">
+                            <span class="card-title text_cont">
+                                <div class="card_title_cont">
+                                    <div>
+                                        <div class="principal">Accesorios</div>
+                                        <div class="sub_text">Comprar ahora</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l8 s12">
+                    <div class="card padLeft">
+                        <div class="card-image image_content_info">
+                            <img src="assets/img/beachwear7.png">
+                            <span class="card-title text_cont">
+                                <div class="card_title_cont">
+                                    <div>
+                                        <div class="principal">Mujer</div>
+                                        <div class="sub_text">Comprar ahora</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l6 s12">
+                    <div class="card padRight">
+                        <div class="card-image image_content_info">
+                            <img src="assets/img/beachwear8.png">
+                            <span class="card-title text_cont">
+                                <div class="card_title_cont">
+                                    <div>
+                                        <div class="principal">Zapatos</div>
+                                        <div class="sub_text">Comprar ahora</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l6 s12">
+                    <div class="card padLeft">
+                        <div class="card-image image_content_info">
+                            <img src="assets/img/beachwear9.png">
+                            <span class="card-title text_cont">
+                                <div class="card_title_cont">
+                                    <div>
+                                        <div class="principal">Rebajas</div>
+                                        <div class="sub_text">Comprar ahora</div>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="page-footer">
+        <div class="footer_cont">
+            <div class="row">
+                <div class="col l12 s12 center logo">
+                    <img src="assets/img/logo_white.svg">
+                </div>
+                <div class="cont_information_main">
+                    <div class="col l2 s12">
+                        <div class="title_text_footer">Sobre nosotros</div>
+                        <ul>
+                            <li><a class="subtex_footer" href="#!">Historia</a></li>
+                            <li><a class="white-text" href="#!">Sustentabilidad</a></li>
+                            <li><a class="white-text" href="#!">Tarjeta C&A Bradescard</a></li>
+                            <li><a class="white-text" href="#!">Tarjeta de Regalo</a></li>
+                            <li><a class="white-text" href="#!">Trabaja con nosotros</a></li>
+                            <li><a class="white-text" href="#!">Encuentra tu tienda</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l2 s12">
+                        <div class="title_text_footer">Productos</div>
+                        <ul>
+                            <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                            <li><a class="white-text" href="#!">Hombre</a></li>
+                            <li><a class="white-text" href="#!">Niño/a</a></li>
+                            <li><a class="white-text" href="#!">Zapatos</a></li>
+                            <li><a class="white-text" href="#!">Accesorios</a></li>
+                            <li><a class="white-text" href="#!">Rebajas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l2 s12">
+                        <div class="title_text_footer">Ayuda</div>
+                        <ul>
+                            <li><a class="subtex_footer" href="#!">Cambios y devoluciones</a></li>
+                            <li><a class="white-text" href="#!">Preguntas frecuentes</a></li>
+                            <li><a class="white-text" href="#!">Facturación</a></li>
+                            <li><a class="white-text" href="#!">Mi cuenta</a></li>
+                            <li><a class="white-text" href="#!">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s12 l3 offset-l3 send_question">
+                    <div class="col s12">
+                        <div class="title_text_footer">Newsletter</div>
+                        <ul>
+                            <li><a class="subtex_footer" href="#!">Conoce las promociones e información C&A</a></li>
+                        </ul>
+                    </div>
+                    <div class="send_question">
+                        <div class="col s12">
+                            <div class="search input_send">
+                                <input type="text" placeholder="Escribe tu e-mail" />
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="subBtn btnSend_footer">ENVIAR</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 termns_mobile">
+                    <ul class="collapsible" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Productos</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/plus.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                    <li><a class="white-text" href="#!">Hombre</a></li>
+                                    <li><a class="white-text" href="#!">Niño/a</a></li>
+                                    <li><a class="white-text" href="#!">Zapatos</a></li>
+                                    <li><a class="white-text" href="#!">Accesorios</a></li>
+                                    <li><a class="white-text" href="#!">Rebajas</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Sobre nosotros</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/plus.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Historia</a></li>
+                                    <li><a class="white-text" href="#!">Sustentabilidad</a></li>
+                                    <li><a class="white-text" href="#!">Tarjeta C&A Bradescard</a></li>
+                                    <li><a class="white-text" href="#!">Tarjeta de Regalo</a></li>
+                                    <li><a class="white-text" href="#!">Trabaja con nosotros</a></li>
+                                    <li><a class="white-text" href="#!">Encuentra tu tienda</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col s6">Ayuda</div>
+                                <div class="col s6 plus">
+                                    <img src="assets/icons/plus.svg">
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a class="subtex_footer" href="#!">Cambios y devoluciones</a></li>
+                                    <li><a class="white-text" href="#!">Preguntas frecuentes</a></li>
+                                    <li><a class="white-text" href="#!">Facturación</a></li>
+                                    <li><a class="white-text" href="#!">Mi cuenta</a></li>
+                                    <li><a class="white-text" href="#!">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
+
+
+
+            </div>
+        </div>
+        <div class="row pay">
+            <div class="col l4 s12">
+                <div class="title_pay">Formas de pago</div>
+                <div>
+                    <img src="assets/img/payments.png">
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="title_pay">Sigamos en contacto</div>
+                <div class="social">
+                    <div class="social_mobile">
+                        <div>
+                            <img src="assets/icons/facebook.svg">
+                        </div>
+                        <div>
+                            <img src="assets/icons/instagram.svg">
+                        </div>
+                        <div class="final">
+                            <img src="assets/icons/youTube.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="title_pay">Compra segura</div>
+                <div class="content_sites">
+                    <img src="assets/img/site.png">
+                </div>
+            </div>
+        </div>
+        <div class="row privacity">
+            <div class="col s12 l12 privacity_termns">
+                <div class="col s12">
+                    <div class="col s12 l6 text">
+                        Aviso de privacidad
+                    </div>
+                    <div class="col s12 l6 text textTerm">
+                        Términos y condicones
+                    </div>
+                </div>
+
+            </div>
+            <div class="col s12 l12 copy">
+                C&A México 2021® Todos los derechos reservados
+            </div>
+        </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
