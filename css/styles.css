@@ -733,7 +733,9 @@ footer .collapsible-header{
 #menu_active_mobile{
     display: none;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: 100px;
+    overflow: auto;
     background-color: #fff;
     position: absolute;
     top: 35px;;
@@ -811,7 +813,197 @@ footer .collapsible-header{
 .question_menu span{
     color: #000000 !important;
 }
+.big_search{
+    width: 100%;
+}
+.img_payments{
+    width: 300px;
+}
+.mode_view{
+    text-align: right;
+}
+.mode_view img{
+    margin-left: 15px;
+}
+.list_filters{
+    margin-top: -30px;
+}
+.filters_mobile{
+    display: none;
+}
+.cont_main{
+    padding:0px 55px;
+}
+.text_main{
+    font-size: 18px;
+    line-height: 23px;
+    color:#212121;
+    font-family:"FuturaPTDemi";
+    padding-bottom: 15px;
+}
+.subtitle_filters_lateral{
+    font-size: 18px;
+    line-height: 23px;
+    color:#000000;
+    font-family:"FuturaPTBook";
+    padding-bottom: 15px !important;
+}
+.subtitle2_filters_lateral{
+    font-size: 18px;
+    line-height: 24px;
+    color:#212121;
+    font-family:"FuturaPTDemi";
+    padding-bottom: 15px;
+}
+.cont_filters_text{
+    font-size: 14px;
+    line-height: 24px;
+    color:#212121;
+    font-family:"FuturaPTBook";
+    padding-bottom: 15px;
+    padding-left: 15px !important;
+}
+.cont_filters_text span{
+    color:#BFBFBF;
+    padding-left: 15px;
+}
+.filters_cont{
+    overflow: auto;
+    height: 173px;
+}
+.cont_filters_text:hover, .subtitle2_filters_lateral:hover{
+    color:#0043BA;
+}
+.filters_cont{
+    max-width: 190px;
+}
+[type="checkbox"].filled-in:checked+label:after{
+    border: 2px solid #0043BA;
+    background-color: #0043BA;
+}
+.filters_type{
+    height: auto;
+    max-height: 170px;
+}
+.filters_type p{
+    margin-block-start: 6px !important;
+    margin-block-end: 6px !important;
+    margin-left: 15px;
+}
+.filters_type label{
+    font-size: 14px;
+    line-height: 24px;
+    color:#212121;
+    font-family:"FuturaPTBook";
+    padding-bottom: 15px;
+}
+.filters_type label:hover{
+    color:#0043BA;
+}
+.color_filter{
+    width: 20%;
+}
+.color_filter .init{
+    display: flex;
+    padding-top: 8px;
+}
+.color_filter .init div{
+    padding-right: 2px;
+}
+.text_color{
+    font-family:"FuturaPTBook";
+    font-size: 8px;
+    line-height: 10px;
+    color:#000000;
+    text-align: center;
+    margin-top: -5px;
+}
+.color_main{
+    text-align: center;
+}
+.green{
+    fill:#06760F;
+}
+.blue{
+    fill:#1E659A;
+}
+.black{
+    fill:#000000;
+}
+.white{
+    fill:#FFFFFF;
+}
+.wine{
+    fill:#7B0A0A;
+}
+.pistachio{
+    fill:#ADC9A1;
+}
+.pink{
+    fill:#F5A8A8;
+}
+.gray{
+    fill:#D1D1D1;
+}
+.size{
+    font-family:"FuturaPTBook";
+    font-size: 10px;
+    line-height: 16px;
+    border: 1px solid #E1E1E1;
+    background: #F5F5F5;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    float: left;
+    margin-top: 5px;
+}
+.active_size{
+    border: 1px solid #0043BA;
+    background: #0043BA;
+    color: #fff;
+}
+.view_general .view_element{
+    display: flex;
+    justify-content: center;
+}
+.modeFour, .modeSix{
+    cursor: pointer;
+}
+   
 @media(max-width:600px){
+   
+    .filters_lateral{
+        display: none;
+    }
+    .cont_main{
+        padding:0px 15px;
+    }
+    .title_pay_cont{
+        text-align: center;
+    }
+    .filters{
+        padding:0px 15px !important;
+    }
+    .title_filters{
+        padding:0px 15px;
+    }
+    .title_categories{
+        padding:0px !important;
+    }
+    .filters_mobile{
+        display: block;
+        text-align: right;
+    }
+    .title_filters{
+        margin-top: -40px;
+        padding-bottom: 50px;
+    }
+    .mode_mobile{
+        display: none;
+    }
     .content_sites{
         display: flex;
         justify-content: center;
@@ -958,3 +1150,71 @@ footer .collapsible-header{
         padding: 15px 15px;
     }
   }
+
+
+.bread{
+    background-color: #FFFFFF;
+    box-shadow: none;
+    padding:0px 55px;
+}
+.bread .breadcrumb{
+    color:#212121;
+    font-size: 16px;
+}
+.breadcrumb:before{
+    color:#212121;
+}
+.title_categories{
+    padding:0px 55px;
+    color:#000000;
+    font-family:"FuturaPTDemi";
+    font-size: 42px;
+    line-height: 32px;
+}
+.title_categories span{
+    color:#909090;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 32px;
+    font-family:"FuturaPTBook";
+}
+.filters{
+    padding: 0px 55px;
+}
+.clean{
+    text-decoration: underline;
+    font-size: 19px;
+    color:#212121;
+}
+.chips{
+    border-bottom:none;
+}
+.selectFilters .select-wrapper input.select-dropdown{
+    border: 1px solid #BFBFBF;
+    height: 40px;
+    padding: 0px 10px;
+    padding-right: 0px;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    color:#000000;
+}
+.dropdown-content li>a:hover, .dropdown-content li>span:hover{
+    color:#fff;
+}
+.select-dropdown.dropdown-content li:hover{
+    color:#fff;
+    background-color: #000000;
+}
+.selectFilters .select-wrapper{
+    margin-top: 8px;
+}
+.input-field.col label{
+    left: 0;
+}
+.selectFilters label{
+    color:#212121;
+    font-size: 14px;
+    line-height: 17px;
+    font-family:"FuturaPTBook";
+    padding-bottom: 15px;
+}
