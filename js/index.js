@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let menu_mobile=false;
     $('select').material_select();
-
+    $('.modal').modal();
     $(window).scroll(function () {
         var y = $(window).scrollTop();
         console.info(y)

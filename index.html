@@ -844,7 +844,11 @@
             <div class="col s12 l6">
                 <div class="search input_send send_cont">
                     <input type="text" placeholder="Escribe tu e-mail" />
-                    <div class="subBtn">ENVIAR</div>
+                    <div class="subBtn">
+                        <a class="modal-trigger" href="#modal1">
+                            ENVIAR
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col s12 l6 send_mobile">
@@ -854,7 +858,9 @@
                     </div>
                 </div>
                 <div class="col s12">
-                    <div class="subBtn">ENVIAR</div>
+                    <a class="modal-trigger" href="#modal1">
+                        <div class="subBtn">ENVIAR</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -956,6 +962,70 @@
                 </div>
             </div>
         </div>
+        <!-- Modal Structureaki -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="m_close">
+                    <a href="#!" class="modal-action modal-close">
+                        <img class="close_menu" src="assets/icons/close.svg">
+                    </a>
+                </div>
+                <div class="m_logo">
+                    <image src="./assets/img/logo.svg" />
+                </div>
+                <div class="m_title">
+                    Forma parte de la comunidad C&A
+                </div>
+                <div class="m_form row">
+                    <div class="col s12 l10 offset-l1">
+                        Correo electrónico *
+                        <div class="m_email">
+                            <input type="text" class="m_input" placeholder="adrian.cabrera@sharkthink.mx"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="m_form row">
+                    <div class="col s12 l5 offset-l1 m_birth">
+                        <div class="m_birth">
+                            Fecha de nacimiento *                       
+                            <div class="m_email">
+                                <input type="text" class="m_input" placeholder="dd/mm/aaaa"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l5 m_buy">
+                        <div class="m_buy  col s12">
+                            <div>
+                                <div>
+                                    Preferencia de compra * 
+                                </div>                
+                                <div class="input-field selectFilters m_lst">
+                                    <select>
+                                        <option value="" selected>Escoge</option>
+                                        <option value="1">Item 1</option>
+                                        <option value="2">Item 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m_requiere">
+                    *Campos requeridos
+                </div>
+                <div class="m_send send_mobile">
+                    <div class="subBtn">ENVIAR</div>
+                </div>
+                <div class="m_footer">
+                    <div>
+                        Al regístrate, aceptas la <span class="underline">Política de privacidad</span> y los
+                        <span class="underline">Términos de uso</span> de C&A.
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
     </main>
     <footer class="page-footer">
         <div class="footer_cont">
@@ -1011,7 +1081,9 @@
                             </div>
                         </div>
                         <div class="col s12">
-                            <div class="subBtn btnSend_footer">ENVIAR</div>
+                            <a class="modal-trigger" href="#modal1">
+                                <div class="subBtn btnSend_footer">ENVIAR</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1072,10 +1144,6 @@
                         </li>
                     </ul>
                 </div>
-
-
-
-
             </div>
         </div>
         <div class="row pay">
