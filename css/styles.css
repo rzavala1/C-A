@@ -931,7 +931,7 @@ footer .collapsible-header{
     fill:#000000;
 }
 .white{
-    fill:#FFFFFF;
+    fill:#f0f0f0
 }
 .wine{
     fill:#7B0A0A;
@@ -1065,7 +1065,9 @@ footer .collapsible-header{
 .underline{
     text-decoration: underline;
 }
-
+[type="checkbox"].filled-in:not(:checked)+label:after{
+    border: 1px solid #BFBFBF;
+}
 @media(max-width:600px){
     .m_buy{
         padding-top: 10px !important;
