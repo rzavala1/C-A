@@ -378,13 +378,23 @@ input[type=text]:not(.browser-default):focus:not([readonly]){
     padding-bottom: 30px !important;
 }
 .instruccion{
-    width: 65px;
-    height: 18px;
-    padding: 5px;
-    background-color: #0043BA;  
+    width: 69px;
+    height: 21px !important;
+    font-family: "FuturaPTDemi";
     border-radius: 5px;
     color:#FFFFFF !important;
-    font-size: 12px;
+    font-size: 12px !important;
+    margin-left: 5px !important;
+}
+.new_b{
+    background-color: #0043BA;   
+}
+.hotsale_b{
+    background-color: #C4143D;   
+}
+.top_b{
+    background-color: #FFC844;   
+    color:#212121 !important;
 }
 .title_scroll{
     width: 100%;
@@ -442,6 +452,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]){
     font-size: 14px;
     line-height: 14px;
     color:#FF0000;
+    margin-left: 20px;
 }
 .item_scroll_main{
     width: 261px;
@@ -1180,7 +1191,9 @@ footer .collapsible-header{
 .collad_header_text{
     width: 75%;
 }
-
+.card .card-image .card-title{
+    padding: 27px 12px !important;
+}
 
 
 
