@@ -2,9 +2,17 @@ $(document).ready(function () {
     let menu_mobile=false;
     $('select').material_select();
     $('.modal').modal();
+    $('.carousel_scroll').carousel(
+        {
+            dist: 0,
+            padding: 0,
+            indicators: true,
+            duration: 200
+        }
+    );
+    
     $(window).scroll(function () {
         var y = $(window).scrollTop();
-        console.info(y)
         if(menu_mobile===false){
             if (y < 140) {
                 $('.information_header').addClass("quit_header");
@@ -22,15 +30,6 @@ $(document).ready(function () {
         }
         
     });
-
-    $('.carousel_scroll').carousel(
-        {
-            dist: 0,
-            padding: 0,
-            indicators: true,
-            duration: 200
-        }
-    );
 
     autoplay();
     configuration();
@@ -56,12 +55,29 @@ $(document).ready(function () {
         $('.arrowRight_fav').click(function () {
             $('.carousel_fovorites_main').carousel('next');
         });
+        changeCaret();
+    }
+
+    function changeCaret(){
+        $(".caret").html("");
+        $(".caret").append('<img src="assets/icons/caret.svg">');
     }
 
     function autoplay() {
         $('.carousel_scroll').carousel('next');
         setTimeout(autoplay, 5000);
     }
+
+    $('.collap-header').click(function () {
+        console.info($(this).parent().html())
+        if($(this).parent().children(".collap-body").hasClass("active_colap")){
+            $(this).parent().children(".collap-body").removeClass("active_colap");
+            $(this).parent().children(".collap-body").fadeOut(0)
+        }else{
+            $(this).parent().children(".collap-body").fadeIn(100);
+            $(this).parent().children(".collap-body").addClass("active_colap");
+        }
+    });
 
     $('.arrowLeft').click(function () {
         $('.carousel_scroll').carousel('prev');

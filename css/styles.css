@@ -508,6 +508,7 @@ input[type=text]:not(.browser-default):focus:not([readonly]){
     padding: 0px;
     margin-right: 0px;
     padding-left: 15px;
+    color:#000000;
 }
 .subBtn{
     font-family: 'FuturaPTMedium';
@@ -530,6 +531,30 @@ input[type=text]:not(.browser-default):focus:not([readonly]){
     margin-top: 15px;
     border-radius:20px ;
     height: 40px;
+}
+.send_continue{
+    display: flex;
+    justify-content: center;
+    margin-top:12px !important;
+    width: 100%;
+}
+.send_continue .subBtn{
+    width: 408px;
+    margin-top: 30px;
+    border-radius:20px ;
+    height: 40px;
+}
+
+.send_registration .subBtn{
+    width: 408px;
+    margin-top: 15px;
+    border-radius:20px ;
+    height: 40px;
+}
+.send_registration{
+    margin-top:0px !important;
+    display: flex;
+    justify-content: center;
 }
 .send_question .subBtn{
     width: 100%;
@@ -839,7 +864,7 @@ footer .collapsible-header{
     line-height: 23px;
     color:#212121;
     font-family:"FuturaPTDemi";
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 .subtitle_filters_lateral{
     font-size: 18px;
@@ -853,7 +878,7 @@ footer .collapsible-header{
     line-height: 24px;
     color:#212121;
     font-family:"FuturaPTDemi";
-    padding-bottom: 15px;
+    padding-bottom: 20px !important;
 }
 .cont_filters_text{
     font-size: 14px;
@@ -870,12 +895,11 @@ footer .collapsible-header{
 .filters_cont{
     overflow: auto;
     height: 173px;
+    max-width: 190px;
+    margin-bottom: 20px;
 }
 .cont_filters_text:hover, .subtitle2_filters_lateral:hover{
     color:#0043BA;
-}
-.filters_cont{
-    max-width: 190px;
 }
 [type="checkbox"].filled-in:checked+label:after{
     border: 2px solid #0043BA;
@@ -908,7 +932,7 @@ footer .collapsible-header{
     padding-top: 8px;
 }
 .color_filter .init div{
-    padding-right: 2px;
+    padding-right: 6px;
 }
 .text_color{
     font-family:"FuturaPTBook";
@@ -945,6 +969,9 @@ footer .collapsible-header{
 .gray{
     fill:#D1D1D1;
 }
+.subtitle_menu a{
+    color:#000000;
+}
 .size{
     font-family:"FuturaPTBook";
     font-size: 10px;
@@ -956,9 +983,9 @@ footer .collapsible-header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 10px;
     float: left;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .active_size{
     border: 1px solid #0043BA;
@@ -993,8 +1020,10 @@ footer .collapsible-header{
     font-family:"FuturaPTDemi";
     font-size: 14px;
     line-height: 18px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
 }
 .m_email{
     border: 1px solid #909090;
@@ -1007,17 +1036,32 @@ footer .collapsible-header{
 }
 .m_form input[type=text]:not(.browser-default){
     border-bottom:none;
+    height: 40px;
 }
 .m_input{
     font-family:"FuturaPTBook";
     font-size: 16px;
     line-height: 24px;
+    height: 40px;
+}
+.m_emain_main{
+    width: 408px;
+}
+.m_group_form{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.m_birth_main{
+    width: 190px;
 }
 .m_birth{
-    padding-right: 5px;
+    margin-left: 0px;
 }
 .m_buy{
     padding-left: 5px;
+}
+.m_between{
+    width: 19px !important;
 }
 .m_lst{
     margin-top: -4px;
@@ -1032,8 +1076,20 @@ footer .collapsible-header{
     color: #000000 !important;
     z-index: 1;
 }
-.modal1{
+#modal1{
     z-index: 100000 !important;
+    background-color: #FFFFFF !important;
+    width: 537px !important;
+    height: 552px !important;
+    overflow: hidden;
+}
+#modal_registration_ok{
+    z-index: 100004 !important;
+    background-color: #FFFFFF !important;
+    width: 537px !important;
+    height: 390px !important;
+    overflow: hidden;
+    display: none;
 }
 .m_buy .m_email{
     margin-left:20px ;
@@ -1068,7 +1124,76 @@ footer .collapsible-header{
 [type="checkbox"].filled-in:not(:checked)+label:after{
     border: 1px solid #BFBFBF;
 }
+.control{
+    cursor: pointer;
+}
+.images_payments img{
+    padding-left: 5px;
+}
+.m_title_regis{
+    color:#0043BA;
+    font-family:"FuturaPTMedium";
+    font-size: 42px;
+    line-height: 32px;
+    margin-top: 35px;
+}
+.m_registration_subtext{
+    font-family:"FuturaPTBook";
+    color:#000000;
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 40px;
+    text-align: center;
+}
+.collapsible_filter{
+    margin-top: 30px;
+    height: 33px;
+    border: 0px;
+    box-shadow: none;
+}
+.active_colap{
+    display: block;
+}
+.collap-body{
+    display: none;
+}
+.collap-header{
+    display: flex;
+}
+.collad_header_text{
+    width: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:600px){
+    .images_payments{
+        text-align: center;
+    }
+    #modal1, #modal_registration_ok{
+        width: 100% !important;
+    }
     .m_buy{
         padding-top: 10px !important;
     }
@@ -1195,17 +1320,30 @@ footer .collapsible-header{
     .carousel_scroll .carousel-item, .carousel_scroll .carousel-item>img{
         height: 651px !important;
     }
+    .text_item_main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .btn_item{
-        margin-left: 75px;
-        margin-bottom: 77px;
+        width: 90%;
+        margin-left: 0;
     }
     .text_item{
         font-size: 48px;
         line-height: 50px;
-        margin-left: 66px;
+        margin-left: 0;
         margin-bottom: 264px;
-        width: 364px;
+        width: 100%;
         text-align: center;
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    .arrowLeft{
+        margin-left: 10px;
+    }
+    .arrowRight{
+        margin-right: 10px;
     }
     #menu_main_mobile{
         display: block;
