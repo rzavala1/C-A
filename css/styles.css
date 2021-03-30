@@ -1072,9 +1072,26 @@ footer .collapsible-header{
     border:1px solid #909090 !important;
     background-color: #fff !important;
 }
+.m_filters .select-dropdown{
+    border-radius: 20px !important;
+    border:1px solid #909090 !important;
+    background-color: #fff !important;
+}
+.m_filters{
+    margin-top: -19px;
+}
+.m_filters .select-wrapper span.caret{
+    color: #000000 !important;
+    z-index: 1;
+}
 .m_lst .select-wrapper span.caret{
     color: #000000 !important;
     z-index: 1;
+}
+.m_lst input{
+    color:#909090;
+    font-size: 16px;
+    font-family:"FuturaPTBook";
 }
 #modal1{
     z-index: 100000 !important;
@@ -1436,6 +1453,7 @@ footer .collapsible-header{
 }
 .dropdown-content li>a, .dropdown-content li>span{
     color:#000000;
+    
 }
 .dropdown-content li>a:hover, .dropdown-content li>span:hover{
     color:#fff;
