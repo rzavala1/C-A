@@ -56,6 +56,7 @@ $(document).ready(function () {
             $('.carousel_fovorites_main').carousel('next');
         });
         changeCaret();
+        configuRating();
     }
 
     function changeCaret(){
@@ -68,6 +69,22 @@ $(document).ready(function () {
         setTimeout(autoplay, 5000);
     }
 
+    function configuRating(){
+        var options = {
+            max_value: 5,
+            step_size: 0.5,
+            initial_value: 0,
+            selected_symbol_type: 'utf8_star', // Must be a key from symbols
+            cursor: 'default',
+            readonly: false,
+            change_once: false, // Determines if the rating can only be set once
+            ajax_method: 'POST',
+            url: 'http://localhost/test.php',
+            additional_data: {} // Additional data to send to the server
+        }
+        $(".rating").rate(options);
+    }
+
     $('.collap-header').click(function () {
         console.info($(this).parent().html())
         if($(this).parent().children(".collap-body").hasClass("active_colap")){
@@ -77,6 +94,16 @@ $(document).ready(function () {
             $(this).parent().children(".collap-body").fadeIn(100);
             $(this).parent().children(".collap-body").addClass("active_colap");
         }
+    });
+
+    $('.card-image').click(function () {
+        $("#model_detail_main").fadeIn(100);
+        $("body").css("overflow","hidden");
+     });
+
+    $('.modal_close_detail').click(function () {
+       $("#model_detail_main").fadeOut(100);
+       $("body").css("overflow","auto");
     });
 
     $('.arrowLeft').click(function () {
