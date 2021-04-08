@@ -1297,7 +1297,9 @@ footer .collapsible-header{
 .search_m_prices{
     margin-top: -20px;
 }
-
+.cont_prop .card .card-image .card-title{
+    padding-left: 0px !important; 
+}
 
 
 
@@ -1335,6 +1337,9 @@ footer .collapsible-header{
 
 
 @media(max-width:600px){
+    .selectFilters{
+        width: 93% !important;
+    }
     #content_main .card .card-title{
         text-align: center;
         padding-left: 12px !important; 
@@ -1367,6 +1372,18 @@ footer .collapsible-header{
     }
     .m_group_form{
         display: block;
+        margin-top: -12px;
+    }
+    #modal1{
+        top:0px !important;
+        height: 596px !important;
+        max-height: 100%;
+    }
+    #modal1 .modal-trigger{
+        width: 100%;
+    }
+    #modal1 .btnRegistration{
+        width: 100%;
     }
     .m_between{
         width: 26px !important;
