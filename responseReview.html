@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/responseReview.css">
+    <title>C&A Moda México</title>
+</head>
+
+<header>
+    <div class="row information_header">
+        <div class="col l2 offset-l10 information_main">
+            <div class="col atribute_information">
+                <img src="assets/icons/helpIcon.svg">
+                <div class="text_info">Ayuda</div>
+            </div>
+            <div class="col atribute_information">
+                <img src="assets/icons/pointIcon.svg">
+                <div class="text_info">Tienda</div>
+            </div>
+        </div>
+        <div class="information_promo s12">
+            <div>
+                <img src="assets/icons/arrowLeftInfo.svg">
+            </div>
+            <div class="text_promo">
+                Conoce nuestras NUEVAS COLECCIONES con todas las tendencias de la temporada
+            </div>
+            <div>
+                <img src="assets/icons/arrowRightInfo.svg">
+            </div>
+        </div>
+    </div>
+    <div id="menu_main" class="row main_header">
+        <div class="col l8 area1">
+            <div class="menu_logo">
+                <image src="./assets/img/logo.svg" />
+            </div>
+            <div class="control option option2">
+                Lo más nuevo
+            </div>
+            <div class="control option option2">
+                Mujer
+            </div>
+            <div class="control option option2">
+                Hombre
+            </div>
+            <div class="control option option2">
+                Niño/a
+            </div>
+            <div class="control option option2">
+                Zapatos
+            </div>
+            <div class="control option option2">
+                Accesorios
+            </div>
+            <div class="control option option2">
+                Rebajas
+            </div>
+        </div>
+        <div class="col l4 area2">
+            <div id="comp_search" class="search">
+                <input id="search_main" type="text" placeholder="Buscar" />
+                <img src="assets/icons/search.svg">
+                <img class="close_search" src="assets/icons/closeSearch.svg">
+            </div>
+            <div class="control icon_user">
+                <svg data-name="Componente 68 – 26" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <rect id="Rectángulo_2458" data-name="Rectángulo 2458" width="24" height="24" fill="#fff"
+                        opacity="0" />
+                    <path id="user_svg"
+                        d="M13,13A5.5,5.5,0,1,0,7.5,7.5,5.5,5.5,0,0,0,13,13Zm3.667-5.5A3.667,3.667,0,1,1,13,3.833,3.667,3.667,0,0,1,16.667,7.5ZM24,22.167A1.8,1.8,0,0,1,22.167,24H3.833A1.8,1.8,0,0,1,2,22.167c0-1.833,1.833-7.333,11-7.333S24,20.333,24,22.167Zm-1.833-.007a4.9,4.9,0,0,0-1.525-3.051c-1.2-1.2-3.445-2.442-7.641-2.442s-6.446,1.247-7.641,2.442a4.909,4.909,0,0,0-1.525,3.051Z"
+                        transform="translate(-1 -1)" fill="#212121" />
+                </svg>
+            </div>
+            <div class="favorite control icon_favorites">
+                <svg id="Componente_67_6" data-name="Componente 67 – 6" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <rect id="Rectángulo_2459" data-name="Rectángulo 2459" width="24" height="24" fill="#fff"
+                        opacity="0" />
+                    <path id="favorite_svg"
+                        d="M11,3.779l-.986-1.013C7.7.386,3.457,1.207,1.925,4.2c-.719,1.407-.881,3.438.432,6.03,1.265,2.5,3.9,5.485,8.644,8.741,4.747-3.256,7.377-6.245,8.644-8.741C20.957,7.634,20.8,5.6,20.076,4.2,18.544,1.207,14.3.385,11.986,2.764Zm0,16.847C-10.083,6.694,4.509-4.18,10.758,1.572c.083.076.164.154.242.235q.116-.122.242-.234C17.49-4.183,32.084,6.692,11,20.626Z"
+                        transform="translate(1 1.688)" fill="#212121" />
+                </svg>
+            </div>
+            <div class="favorite control icon_cart">
+                <svg id="Componente_66_6" data-name="Componente 66 – 6" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <rect id="Rectángulo_2457" data-name="Rectángulo 2457" width="24" height="24" fill="#fff"
+                        opacity="0" />
+                    <path id="cart_svg" data-name="Trazado 7798"
+                        d="M237.365,235.486a.568.568,0,0,0,.508-.419l2.213-8.16a.568.568,0,0,0-.537-.717l-16.83-.363-.441-2.071-3.426-1.109a.569.569,0,1,0-.351,1.082l2.8.906,2.423,11.377a2.69,2.69,0,0,0,.143,2.145,2.835,2.835,0,0,0,1.572,1.237,2.166,2.166,0,0,0,.837,4.156h.026a2.162,2.162,0,0,0,1.248-3.939c.264-.027.508-.066.724-.1a3.988,3.988,0,0,1,1.033-.1,2.8,2.8,0,0,1,1.029.432,4.765,4.765,0,0,0,2.448.8l.09,0,.078,0a4.793,4.793,0,0,0,2.466-.8,2.786,2.786,0,0,1,.91-.412,2.314,2.314,0,0,1,.352-.017,2.163,2.163,0,0,0,.689,4.207h.026a2.163,2.163,0,0,0,1.178-3.984c.146,0,.3,0,.456-.005a.568.568,0,0,0,.537-.6.561.561,0,0,0-.6-.536,5.625,5.625,0,0,1-1.313-.111,4.579,4.579,0,0,0-1.511-.077,3.847,3.847,0,0,0-1.31.558,3.709,3.709,0,0,1-1.933.64h-.058a3.7,3.7,0,0,1-1.925-.642,3.919,3.919,0,0,0-1.433-.575,4.724,4.724,0,0,0-1.407.1,4.422,4.422,0,0,1-2.2-.05,1.762,1.762,0,0,1-1.016-.74,1.6,1.6,0,0,1-.05-1.213Zm.751,6.7a1.144,1.144,0,0,1-.734.294,1.032,1.032,0,0,1,.011-2.063h.012a1.031,1.031,0,0,1,.71,1.769Zm-11.093-.069a1.08,1.08,0,0,1-.734.295,1.032,1.032,0,0,1,.011-2.064h.012a1.031,1.031,0,0,1,.711,1.769Zm-3.1-10.659,2.867.044.483,3.566-2.542.182Zm6.447-4.331-.023,3.293-2.56-.039-.449-3.319Zm-2.429,4.393,2.4.036-.023,3.293-1.9.137Zm3.536.054,2.6.04-.473,3-2.149.154Zm2.779-1.095-2.771-.042.023-3.286,3.261.07Zm2.628,3.9-2.113.151.457-2.9,2.391.036Zm1.042-3.842L235.4,230.5l.513-3.251,2.882.062Zm-11.741-3.5.451,3.326-2.955-.045-.714-3.35Z"
+                        transform="translate(-217.107 -221.094)" fill="#040505" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div id="menu_main_mobile" class="row">
+        <div class="col s1 menu">
+            <div>
+                <image class="showMenu" src="assets/icons/menuMobile.svg" />
+            </div>
+        </div>
+        <div class="logo">
+            <div>
+                <image src="./assets/img/logo.svg" />
+            </div>
+        </div>
+        <div class="col s3 menu cart">
+            <div class="col s1">
+                <img class="searchMobile" src="assets/icons/search.svg">
+            </div>
+            <div class="col s1">
+                <img class="cartUser" src="assets/icons/cart.svg">
+            </div>
+        </div>
+    </div>
+    <div id="seach_cont" class="row">
+        <div class="row">
+            <div class="col l3 suggestions">
+                <div class="suggestions_title">
+                    Sugerencias principales:
+                </div>
+                <span>
+                    Jeans
+                </span>
+                <div>
+                    Jeans para Hombre
+                </div>
+                <div>
+                    Jeans para mujer
+                </div>
+            </div>
+            <div class="col l9">
+                <div class="col l3">
+                    <div class="item_scroll_main">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/img/woman.png">
+                                <span class="card-title title_scroll">
+                                    <span class="badge instruccion top_b">TOP</span>
+                                    <span class="badge instruccion hotsale_b">HOSTSALE</span>
+                                    <span class="badge instruccion new_b">NUEVO</span>
+                                </span>
+                                <span class="fovorite_scroll">
+                                    <image class="img_heart1" src="assets/icons/favorite_heart.svg">
+                                        <image class="img_heart2" style="display: none;"
+                                            src="assets/icons/favorite_heart2.svg">
+                                </span>
+                            </div>
+                            <div class="card-content card-content_scroll">
+                                <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                <div class="colors_scroll_cont">
+                                    <div class="colors_scroll green_scroll"></div>
+                                    <div class="colors_scroll blue_scroll margin_left"></div>
+                                    <div class="colors_scroll gray_scroll margin_left"></div>
+                                    <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                </div>
+                                <div class="price_scroll">
+                                    <div class="real_price">
+                                        $599.00
+                                    </div>
+                                    <div class="sale_price margin_left">
+                                        $399.00
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="item_scroll_main">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/img/woman.png">
+                                <span class="card-title title_scroll">
+                                    <span class="badge instruccion top_b">TOP</span>
+                                    <span class="badge instruccion hotsale_b">HOSTSALE</span>
+                                    <span class="badge instruccion new_b">NUEVO</span>
+                                </span>
+                                <span class="fovorite_scroll">
+                                    <image class="img_heart1" src="assets/icons/favorite_heart.svg">
+                                        <image class="img_heart2" style="display: none;"
+                                            src="assets/icons/favorite_heart2.svg">
+                                </span>
+                            </div>
+                            <div class="card-content card-content_scroll">
+                                <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                <div class="colors_scroll_cont">
+                                    <div class="colors_scroll green_scroll"></div>
+                                    <div class="colors_scroll blue_scroll margin_left"></div>
+                                    <div class="colors_scroll gray_scroll margin_left"></div>
+                                    <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                </div>
+                                <div class="price_scroll">
+                                    <div class="real_price">
+                                        $599.00
+                                    </div>
+                                    <div class="sale_price margin_left">
+                                        $399.00
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="item_scroll_main">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/img/woman.png">
+                                <span class="card-title title_scroll">
+                                    <span class="badge instruccion top_b">TOP</span>
+                                    <span class="badge instruccion hotsale_b">HOSTSALE</span>
+                                    <span class="badge instruccion new_b">NUEVO</span>
+                                </span>
+                                <span class="fovorite_scroll">
+                                    <image class="img_heart1" src="assets/icons/favorite_heart.svg">
+                                        <image class="img_heart2" style="display: none;"
+                                            src="assets/icons/favorite_heart2.svg">
+                                </span>
+                            </div>
+                            <div class="card-content card-content_scroll">
+                                <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                <div class="colors_scroll_cont">
+                                    <div class="colors_scroll green_scroll"></div>
+                                    <div class="colors_scroll blue_scroll margin_left"></div>
+                                    <div class="colors_scroll gray_scroll margin_left"></div>
+                                    <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                </div>
+                                <div class="price_scroll">
+                                    <div class="real_price">
+                                        $599.00
+                                    </div>
+                                    <div class="sale_price margin_left">
+                                        $399.00
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="item_scroll_main">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/img/woman.png">
+                                <span class="card-title title_scroll">
+                                    <span class="badge instruccion top_b">TOP</span>
+                                    <span class="badge instruccion hotsale_b">HOSTSALE</span>
+                                    <span class="badge instruccion new_b">NUEVO</span>
+                                </span>
+                                <span class="fovorite_scroll">
+                                    <image class="img_heart1" src="assets/icons/favorite_heart.svg">
+                                        <image class="img_heart2" style="display: none;"
+                                            src="assets/icons/favorite_heart2.svg">
+                                </span>
+                            </div>
+                            <div class="card-content card-content_scroll">
+                                <p>Sudadera cerrada licencia de Popeye estilo drop shoulder</p>
+                                <div class="colors_scroll_cont">
+                                    <div class="colors_scroll green_scroll"></div>
+                                    <div class="colors_scroll blue_scroll margin_left"></div>
+                                    <div class="colors_scroll gray_scroll margin_left"></div>
+                                    <div class="colors_scroll margin_left colors_text_scroll">+2</div>
+                                </div>
+                                <div class="price_scroll">
+                                    <div class="real_price">
+                                        $599.00
+                                    </div>
+                                    <div class="sale_price margin_left">
+                                        $399.00
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="menu_active" class="row">
+        <div class="row">
+            <div class="col l2">
+                <div class="title_menu">
+                    Destacados
+                </div>
+                <div class="subtitle_menu">
+                    Nuevos lanzamientos
+                </div>
+                <div class="subtitle_menu">
+                    Lo más destacado
+                </div>
+                <div class="subtitle_menu">
+                    Tarjeta de Regalo
+                </div>
+            </div>
+            <div class="col l2">
+                <div class="title_menu">
+                    Ropa
+                </div>
+                <div class="subtitle_menu">
+                    Abrigos y chamarras
+                </div>
+                <div class="subtitle_menu">
+                    Blusas y tops
+                </div>
+                <div class="subtitle_menu">
+                    Faldas
+                </div>
+                <div class="subtitle_menu">
+                    Camisas
+                </div>
+                <div class="subtitle_menu">
+                    Playeras
+                </div>
+                <div class="subtitle_menu">
+                    Sudaderas
+                </div>
+                <div class="subtitle_menu">
+                    Sweaters
+                </div>
+                <div class="subtitle_menu">
+                    Vestidos y monos
+                </div>
+            </div>
+            <div class="col l2">
+                <div class="title_menu">
+                    Zapatos
+                </div>
+                <div class="subtitle_menu">
+                    Sandalia
+                </div>
+                <div class="subtitle_menu">
+                    Botas
+                </div>
+                <div class="subtitle_menu">
+                    Tenis
+                </div>
+                <div class="subtitle_menu">
+                    Zapatillas
+                </div>
+            </div>
+            <div class="col l2">
+                <div class="title_menu">
+                    Accesorios
+                </div>
+                <div class="subtitle_menu">
+                    Activewear
+                </div>
+                <div class="subtitle_menu">
+                    Bolsos
+                </div>
+                <div class="subtitle_menu">
+                    Cinturones
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu_active_mobile">
+        <div class="row center">
+            <div clas="col s12">
+                <image class="logo" src="./assets/img/logo.svg" />
+            </div>
+            <div class="close_menu_main">
+                <img class="close_menu" src="assets/icons/close.svg">
+            </div>
+            <div class="col s12 collap_menu">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Lo más nuevo</div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Mujer</div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Hombre</div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Niño/a</div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Zapatos
+                            </div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Accesorios
+                            </div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s10">Rebajas
+                            </div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header favorites_menu">
+                            <div class="col s10">Favoritos
+                            </div>
+                            <div class="col s2 plus">
+                                <img src="assets/icons/arrowMenu.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 option_help">
+                <img src="assets/icons/helpBlack.svg">
+                <div class="text_info">Ayuda</div>
+            </div>
+            <div class="col s6 option_stores">
+                <img src="assets/icons/storesBlack.svg">
+                <div class="text_info">Tiendas</div>
+            </div>
+            <div class="col s12">
+                <div class="social">
+                    <div class="social_mobile">
+                        <div>
+                            <img src="assets/icons/facebook.svg">
+                        </div>
+                        <div>
+                            <img src="assets/icons/instagram.svg">
+                        </div>
+                        <div class="final">
+                            <img src="assets/icons/youTube.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 send_mobile">
+                <div class="subBtn">Mi cuenta</div>
+            </div>
+            <div class="col s12 question_menu">
+                ¿Aún no tienes cuenta? <span>Regístrate</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="cont_main_response">
+    <div class="row">
+        <div class="col s12 l12 tanks_response">
+            ¡Gracias!
+        </div>
+        <div class="col s12 l12 text_response">
+            Recibimos tu reseña, conocer tu opinión es muy importante para nosotros.
+        </div>
+        <div class="col s12 l12 btn_response_main">
+            <div class="btn_response">
+                SEGUIR COMPRANDO
+            </div>
+        </div>
+        <div class="col s12 l8 offset-l3 retail_users_list">
+            <div class="col s3 l2">
+                <div class="col l8">
+                    <div class="col l8">
+                        <div class="rating col l2" data-rate-value=4></div>
+                    </div>
+                    <div class="col l12 date_res_user view_mobile">
+                        Enviado Hace 1 mes
+                    </div>
+                    <div class="col l3 mode_mobile">
+                        <div class="num_rating col l2">4.5</div>
+                    </div>
+                </div>
+                <div class="col l8 center mode_mobile">
+                    <img src="assets/img/userRes.png"/>
+                </div>
+            </div>
+            <div class="col s8 l7 rate_mobile_user">
+                <div class="col l12 title_user_ret mode_mobile">
+                    Me quedó super bien 
+                </div>
+                <div class="col l12 title_user_ret view_mobile">
+                    Laura
+                </div>
+                <div class="col l12 text_user_ret">
+                    Buen corte y material  consectetur adipiscing elit. Integer a nisl massa vivamus fringilla vehicula semper.
+                </div>
+            </div>
+            <div class="col s1 check_res_user">
+                <img src="assets/icons/checkUser.svg" />
+            </div>
+        </div>
+
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="footer_cont">
+        <div class="row">
+            <div class="col l12 s12 center logo">
+                <img src="assets/img/logo_white.svg">
+            </div>
+            <div class="cont_information_main">
+                <div class="col l2 s12">
+                    <div class="title_text_footer">Sobre nosotros</div>
+                    <ul>
+                        <li><a class="subtex_footer" href="#!">Historia</a></li>
+                        <li><a class="subtex_footer" href="#!">Sustentabilidad</a></li>
+                        <li><a class="subtex_footer" href="#!">Tarjeta C&A Bradescard</a></li>
+                        <li><a class="subtex_footer" href="#!">Tarjeta de Regalo</a></li>
+                        <li><a class="subtex_footer" href="#!">Trabaja con nosotros</a></li>
+                        <li><a class="subtex_footer" href="#!">Encuentra tu tienda</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 s12">
+                    <div class="title_text_footer">Productos</div>
+                    <ul>
+                        <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                        <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                        <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                        <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                        <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                        <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                    </ul>
+                </div>
+                <div class="col l2 s12">
+                    <div class="title_text_footer">Ayuda</div>
+                    <ul>
+                        <li><a class="subtex_footer" href="#!">Cambios y devoluciones</a></li>
+                        <li><a class="subtex_footer" href="#!">Preguntas frecuentes</a></li>
+                        <li><a class="subtex_footer" href="#!">Facturación</a></li>
+                        <li><a class="subtex_footer" href="#!">Mi cuenta</a></li>
+                        <li><a class="subtex_footer" href="#!">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s12 l3 offset-l3 send_question">
+                <div class="col s12">
+                    <div class="title_text_footer">Newsletter</div>
+                    <ul>
+                        <li><a class="subtex_footer" href="#!">Conoce las promociones e información C&A</a></li>
+                    </ul>
+                </div>
+                <div class="send_question">
+                    <div class="col s12">
+                        <div class="search input_send">
+                            <input type="text" placeholder="Escribe tu e-mail" />
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <a class="modal-trigger" href="#modal1">
+                            <div class="subBtn btnSend_footer">ENVIAR</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 termns_mobile">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s6">Productos</div>
+                            <div class="col s6 plus">
+                                <img src="assets/icons/plus.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Mujer</a></li>
+                                <li><a class="subtex_footer" href="#!">Hombre</a></li>
+                                <li><a class="subtex_footer" href="#!">Niño/a</a></li>
+                                <li><a class="subtex_footer" href="#!">Zapatos</a></li>
+                                <li><a class="subtex_footer" href="#!">Accesorios</a></li>
+                                <li><a class="subtex_footer" href="#!">Rebajas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s6">Sobre nosotros</div>
+                            <div class="col s6 plus">
+                                <img src="assets/icons/plus.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Historia</a></li>
+                                <li><a class="subtex_footer" href="#!">Sustentabilidad</a></li>
+                                <li><a class="subtex_footer" href="#!">Tarjeta C&A Bradescard</a></li>
+                                <li><a class="subtex_footer" href="#!">Tarjeta de Regalo</a></li>
+                                <li><a class="subtex_footer" href="#!">Trabaja con nosotros</a></li>
+                                <li><a class="subtex_footer" href="#!">Encuentra tu tienda</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="col s6">Ayuda</div>
+                            <div class="col s6 plus">
+                                <img src="assets/icons/plus.svg">
+                            </div>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a class="subtex_footer" href="#!">Cambios y devoluciones</a></li>
+                                <li><a class="subtex_footer" href="#!">Preguntas frecuentes</a></li>
+                                <li><a class="subtex_footer" href="#!">Facturación</a></li>
+                                <li><a class="subtex_footer" href="#!">Mi cuenta</a></li>
+                                <li><a class="subtex_footer" href="#!">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row pay">
+        <div class="col l4 s12">
+            <div class="title_pay">Formas de pago</div>
+            <div class="images_payments">
+                <img src="assets/img/payVisa.png">
+                <img src="assets/img/payMastercard.png">
+                <img src="assets/img/payAmerican.png">
+                <img src="assets/img/payCAVisa.png">
+                <img src="assets/img/payCABlack.png">
+                <img src="assets/img/payCABlue.png">
+                <img src="assets/img/payPaypal.png">
+                <img src="assets/img/payMercadopago.png">
+                <img src="assets/img/payOxxo.png">
+                <img src="assets/img/paySevenEleven.png">
+
+            </div>
+        </div>
+        <div class="col l4 s12">
+            <div class="title_pay">Sigamos en contacto</div>
+            <div class="social">
+                <div class="social_mobile">
+                    <div>
+                        <img src="assets/icons/facebook.svg">
+                    </div>
+                    <div>
+                        <img src="assets/icons/instagram.svg">
+                    </div>
+                    <div class="final">
+                        <img src="assets/icons/youTube.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col l4 s12">
+            <div class="title_pay">Compra segura</div>
+            <div class="content_sites">
+                <img src="assets/img/site.png">
+            </div>
+        </div>
+    </div>
+    <div class="row privacity">
+        <div class="col s12 l12 privacity_termns">
+            <div class="col s12">
+                <div class="col s12 l6 text">
+                    Aviso de privacidad
+                </div>
+                <div class="col s12 l6 text textTerm">
+                    Términos y condicones
+                </div>
+            </div>
+
+        </div>
+        <div class="col s12 l12 copy">
+            C&A México 2021® Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="./js/lib/rater.min.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<script type="text/javascript" src="./js/categories.js"></script>
+</body>
+
+</html>

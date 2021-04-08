@@ -97,8 +97,13 @@ $(document).ready(function () {
         }
      });
     
+     
     $('.card-content').click(function () {
         window.location.href = "detail.html";
+    });
+
+    $('.btn_send_review').click(function () {
+        window.location.href = "responseReview.html";
     });
 
     $('.arrowLeft').click(function () {

@@ -1,0 +1,54 @@
+
+.tanks_response{
+    font-size: 42px;
+    line-height: 32px;
+    font-family: "FuturaPTMedium";
+    color:#0043BA;
+    text-align: center;
+    margin-left:0px !important;
+}
+.text_response{
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTBook";
+    text-align: center;
+    margin-top: 30px;
+}
+.btn_response_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_response{
+    width: 400px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTDemi";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+@media(max-width:600px){
+    .text_response{
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    main{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .tanks_response{
+        font-size: 22px;
+        color: #000000;
+        text-align: left;
+        margin-top: -35px;
+    }
+
+}
