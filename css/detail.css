@@ -203,8 +203,65 @@ hr{
 .rating_mobile{
     display: none;
 }
+.retail_users_list{
+    margin-top: 20px;
+}
+.retail_users_list .center{
+    margin-top: 15px;
+}
+.title_user_ret{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "FuturaPTDemi";
+}
+.text_user_ret{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "FuturaPTBook";
+}
+.time_res_user{
+    text-align: right;
+    font-size: 18px;
+    line-height: 14px;
+    font-family: "FuturaPTBook";
+}
+.cont_res_user{
+    margin-bottom: 60px;
+}
+.check_res_user{
+    display: none;
+}
+.view_mobile{
+    display: none;
+}
 
 @media(max-width:600px){
+    .rate_mobile_user{
+        padding-left: 5px !important;
+    }
+    .date_res_user{
+        font-size: 10px;
+        line-height: 14px;
+        font-family: "FuturaPTBook"; 
+    }
+    .title_user_ret{
+        font-size: 14px;
+        line-height: 20px;
+        font-family: "FuturaPTDemi";
+    }
+    .text_user_ret{
+        font-size: 12px;
+        line-height: 16px;
+        font-family: "FuturaPTBook";
+    }
+    .view_mobile{
+        display: block;
+    }
+    .check_res_user{
+        display: block;
+        text-align: right;
+    }
     .opinion_mobile_detail{
         font-size: 12px;
         line-height: 32px;
@@ -225,6 +282,7 @@ hr{
         color: #000000;
         height: auto;
         margin-right: 15px;
+        margin-left: 0px !important;
     }
     .options_detail_retail{
         padding: 0px !important;
@@ -303,5 +361,9 @@ hr{
     }
     .des_detail_main, .sizes_cont{
         width: 100% !important;
+    }
+    .options_detail_retail .rating{
+        color:#0743BA;
+        font-size: 14px;
     }
 }
