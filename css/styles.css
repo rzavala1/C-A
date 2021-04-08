@@ -1300,7 +1300,9 @@ footer .collapsible-header{
 .cont_prop .card .card-image .card-title{
     padding-left: 0px !important; 
 }
-
+.back_mobile{
+    display: none;
+}
 
 
 
@@ -1337,6 +1339,16 @@ footer .collapsible-header{
 
 
 @media(max-width:600px){
+    .back_mobile{
+        display: block;
+        margin-bottom: 55px;
+        margin-top: -40px;
+    }
+    .cat_back_text{
+        height: 32px;
+        display: flex;
+        align-items: center;
+    }
     .instruccion{
         margin-top: 10px;
     }
