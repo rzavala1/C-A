@@ -1337,6 +1337,15 @@ footer .collapsible-header{
 
 
 @media(max-width:600px){
+    .instruccion{
+        margin-top: 10px;
+    }
+    .space_right{
+        padding-right: 7.5px !important;
+    }
+    .space_left{
+        padding-right: 7.5px !important;
+    }
     .selectFilters{
         width: 93% !important;
     }
