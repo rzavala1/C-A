@@ -1032,6 +1032,7 @@ footer .collapsible-header{
     font-size: 18px;
     line-height: 23px;
     padding-top: 10px;
+    padding-bottom: 15px;
 }
 .m_form{
     font-family:"FuturaPTDemi";
@@ -1054,6 +1055,10 @@ footer .collapsible-header{
 .m_form input[type=text]:not(.browser-default){
     border-bottom:none;
     height: 40px;
+    padding: 0px 5px 0px 15px;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    color: #000000;
 }
 .m_input{
     font-family:"FuturaPTBook";
@@ -1079,10 +1084,10 @@ footer .collapsible-header{
     padding-left: 10px;
 }
 .m_between{
-    width: 26px !important;
+    width: 13px !important;
 }
 .m_lst{
-    margin-top: -4px;
+    margin-top: 5px;
     width: 100%;
 }
 .m_lst .select-dropdown{
@@ -1352,9 +1357,16 @@ footer .collapsible-header{
         width: 177px;
     }
     .m_form{
-        padding-top: 15px;
-        padding-bottom: 0px;
-        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .m_birth_main{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .m_group_form{
+        display: block;
     }
     .m_between{
         width: 26px !important;
