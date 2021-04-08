@@ -596,9 +596,9 @@
                         <img src="assets/img/detailProduct.png" />
                     </div>
                 </div>
-                <div class="col l4 offset-l1">
-                    <div class="col l6 des_detail_main">
-                        <div class="col l12 text_detail">
+                <div class="col s12 l4 offset-l1">
+                    <div class="col s12 l6 des_detail_main">
+                        <div class="col s12 l12 text_detail">
                             Sudadera cerrada licencia de Tom &
                             Jerry estilo drop shoulder
                         </div>
@@ -823,9 +823,9 @@
         <div class="row detail_main_cont">
             <div class="col s12 tabs_main">
                 <ul class="tabs ">
-                    <li class="tab col s2 offset-l1"><a class="active" href="#detailProduct">Detalle de producto</a>
+                    <li class="tab col s2 offset-l1"><a class=""  href="#detailProduct">Detalle de producto</a>
                     </li>
-                    <li class="tab col s2"><a href="#reviews">Reseñas</a></li>
+                    <li class="tab col s2"><a class="active" href="#reviews">Reseñas</a></li>
                 </ul>
             </div>
             <div id="detailProduct" class="col s12 cont_detail_description">
@@ -921,19 +921,39 @@
             </div>
             <div id="reviews" class="col s12 cont_detail_description">
                 <div class="row">
-                    <div class="col l7 offset-l1">
+                    <div class="col l7 offset-l1 mode_mobile">
                         <div class="col l12 rating_main_detail">
                             <div class="rating col l2" data-rate-value=4></div>
                             <div class="num_rating col l2">4.5</div>
                             <div class="res_rating col l3">18 Reseñas</div>
                         </div>
                     </div>
+                    <div class="col s12 rating_mobile rating_main_detail mode_view">
+                        <div class="num_rating col l2">4.5</div>
+                        <div class="rating col l2" data-rate-value=4></div>
+                    </div>
+                    <div class="col s12 center opinion_mobile_detail">Promedio entre 18 opiniones</div>
                 </div>
                 <div class="row options_detail_retail">
-                    <div class="col l6">
-                        <div class="col l6 center btn_cont_view detail_btn">
-                            <div>ESCRIBIR UNA RESEÑA</div>
+                    <div class="col s12 l12 s12">
+                        <div class="col s12 l3 center btn_cont_view detail_btn">
+                            <div>ESCRIBE UNA RESEÑA</div>
                         </div>
+                        <div class="col l9 mode_mobile">
+                            <div class="input-field offset-l9 col l3 s12 selectFilters list_filters m_filters order_detail">
+                                <select>
+                                    <option value="" selected>Ordernar por</option>
+                                    <option value="1">Mayor precio</option>
+                                    <option value="2">Menor precio</option>
+                                    <option value="3">Lo más relevante</option>
+                                    <option value="3">Lo más nuevo</option>
+                                    <option value="3">Lo más vendido</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l12 s12">
+                        <hr>
                     </div>
                     <div class="col l2 offset-l4">
                         

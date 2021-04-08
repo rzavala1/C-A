@@ -194,11 +194,49 @@ hr{
     padding: 0px 112px !important;
     margin-top: 15px;
 }
-
-
-
+.cont_btn_detail{
+    justify-content: flex-end !important;
+}
+.order_detail{
+    margin-top: 0px;
+}
+.rating_mobile{
+    display: none;
+}
 
 @media(max-width:600px){
+    .opinion_mobile_detail{
+        font-size: 12px;
+        line-height: 32px;
+        font-family: "FuturaPTBook";
+        color: #707070;
+        margin-top: -5px;
+    }
+    .rating_mobile{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px !important;
+    }
+    .rating_mobile .num_rating{
+        border: 0px;
+        font-size: 32px;
+        line-height: 26px;
+        font-family: "FuturaPTDemi";
+        color: #000000;
+        height: auto;
+        margin-right: 15px;
+    }
+    .options_detail_retail{
+        padding: 0px !important;
+    }
+    .options_detail_retail div{
+        background-color: #fff;
+        color: #000000;
+    }
+    .options_detail_retail .btn_cont_view{
+        border: 1px solid;
+        border-radius: 20px;
+    }
     .back_mobile{
         margin-bottom: 0px;
     }
@@ -262,5 +300,8 @@ hr{
         line-height: 32px;
         font-family: "FuturaPTDemi";
         margin-left: -20px; 
+    }
+    .des_detail_main, .sizes_cont{
+        width: 100% !important;
     }
 }

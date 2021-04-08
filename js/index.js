@@ -2,6 +2,9 @@ $(document).ready(function () {
     let menu_mobile=false;
     let favorite=false;
 
+    //include html components
+    // includeHTML();
+
     $('select').material_select();
     $('.modal').modal();
     $('.carousel_scroll').carousel(

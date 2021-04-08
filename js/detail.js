@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    var widthScreen = $(window).width();
 
-    
+    $('#optSizeGuie').click(function () {
+        $('#optDetail').fadeOut(100);
+        $('#optGuie').fadeIn();
+    });
+
 
 });
