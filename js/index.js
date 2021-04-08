@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    let menu_mobile=false;
-    let favorite=false;
+    let menu_mobile = false;
+    let favorite = false;
 
     //include html components
     // includeHTML();
@@ -15,10 +15,10 @@ $(document).ready(function () {
             duration: 200
         }
     );
-    
+
     $(window).scroll(function () {
         var y = $(window).scrollTop();
-        if(menu_mobile===false){
+        if (menu_mobile === false) {
             if (y < 140) {
                 $('.information_header').addClass("quit_header");
                 $('.information_header').removeClass("show_header");
@@ -33,7 +33,7 @@ $(document).ready(function () {
                 $('.main_header').removeClass("menu_tranform_normal");
             }
         }
-        
+
     });
 
     autoplay();
@@ -63,7 +63,7 @@ $(document).ready(function () {
         changeCaret();
     }
 
-    function changeCaret(){
+    function changeCaret() {
         $(".caret").html("");
         $(".caret").append('<img src="assets/icons/caret.svg">');
     }
@@ -75,10 +75,10 @@ $(document).ready(function () {
 
     $('.collap-header').click(function () {
         console.info($(this).parent().html())
-        if($(this).parent().children(".collap-body").hasClass("active_colap")){
+        if ($(this).parent().children(".collap-body").hasClass("active_colap")) {
             $(this).parent().children(".collap-body").removeClass("active_colap");
             $(this).parent().children(".collap-body").fadeOut(0)
-        }else{
+        } else {
             $(this).parent().children(".collap-body").fadeIn(100);
             $(this).parent().children(".collap-body").addClass("active_colap");
         }
@@ -86,25 +86,27 @@ $(document).ready(function () {
 
     $('.card-image').click(function () {
         var widthScreen = $(window).width();
-        if(widthScreen>600){
+        if (widthScreen > 600) {
             //solo para versiones que no son mobile
-            if(!favorite){
+            if (!favorite) {
                 $("#model_detail_main").fadeIn(100);
-                $("body").css("overflow","hidden");
-            }else{
-                favorite=false;
+                $("body").css("overflow", "hidden");
+            } else {
+                favorite = false;
             }
         }
-     });
-     
-     
+    });
+
+
+
+
     $('#optSizeGuie').click(function () {
-       $('#model_detail_main').fadeIn();
+        $('#model_detail_main').fadeIn();
     });
 
     $('.close_detail').click(function () {
         $('#model_detail_main').fadeOut();
-     });
+    });
 
     $('.card-content').click(function () {
         window.location.href = "detail.html";
@@ -125,34 +127,34 @@ $(document).ready(function () {
         $(this).css("border-bottom", "2px solid");
         $("#menu_active").fadeIn();
     });
-    
+
     $('.fovorite_scroll').click(function () {
-        favorite=true;
-        if($(this).hasClass("fav_act")){
-            $(this).children('.img_heart2').css("display","none");
+        favorite = true;
+        if ($(this).hasClass("fav_act")) {
+            $(this).children('.img_heart2').css("display", "none");
             $(this).children('.img_heart1').fadeIn();
             $(this).removeClass("fav_act");
-        }else{
+        } else {
             $(this).addClass("fav_act");
-            $(this).children('.img_heart1').css("display","none");
+            $(this).children('.img_heart1').css("display", "none");
             $(this).children('.img_heart2').fadeIn();
         }
     });
 
     $(".icon_user").mouseover(function () {
-        $(this).children().children("#user_svg").css("fill","#0043BA");
+        $(this).children().children("#user_svg").css("fill", "#0043BA");
     }).mouseout(function () {
-        $(this).children().children("#user_svg").css("fill","#212121");
+        $(this).children().children("#user_svg").css("fill", "#212121");
     });;
     $(".icon_favorites").mouseover(function () {
-        $(this).children().children("#favorite_svg").css("fill","#0043BA");
+        $(this).children().children("#favorite_svg").css("fill", "#0043BA");
     }).mouseout(function () {
-        $(this).children().children("#favorite_svg").css("fill","#212121");
+        $(this).children().children("#favorite_svg").css("fill", "#212121");
     });;
     $(".icon_cart").mouseover(function () {
-        $(this).children().children("#cart_svg").css("fill","#0043BA");
+        $(this).children().children("#cart_svg").css("fill", "#0043BA");
     }).mouseout(function () {
-        $(this).children().children("#cart_svg").css("fill","#212121");
+        $(this).children().children("#cart_svg").css("fill", "#212121");
     });;
 
     $("main").mouseout(function () {
@@ -165,9 +167,9 @@ $(document).ready(function () {
     });
 
 
-   
+
     $('.searchMobile').click(function () {
-       $('#search_mobile_cont').fadeIn();
+        $('#search_mobile_cont').fadeIn();
     });
     $('.m_search_close').click(function () {
         $('#search_mobile_cont').fadeOut();
@@ -179,32 +181,32 @@ $(document).ready(function () {
         $('.filters_mobile_main').fadeOut();
     });
 
-   
-    
-    
+
+
+
 
     $('.showMenu').click(function () {
         $('#menu_active_mobile').fadeIn();
-        menu_mobile=true;
+        menu_mobile = true;
     });
 
 
     $('.modeSix').click(function () {
         $(".view_element").removeClass("l6");
         $(".view_element").addClass("l3");
-        $(".view_element").children().css("width","261px")
-        $(".view_element").children().children().children().children("img").css("width","261px")
+        $(".view_element").children().css("width", "261px")
+        $(".view_element").children().children().children().children("img").css("width", "261px")
     });
     $('.modeFour').click(function () {
-       $(".view_element").removeClass("l3");
-       $(".view_element").addClass("l6");
-       $(".view_element").children().css("width","434.55px")
-       $(".view_element").children().children().children().children("img").css("width","434.55px")
-     });
+        $(".view_element").removeClass("l3");
+        $(".view_element").addClass("l6");
+        $(".view_element").children().css("width", "434.55px")
+        $(".view_element").children().children().children().children("img").css("width", "434.55px")
+    });
 
     $('.close_menu').click(function () {
         $('#menu_active_mobile').fadeOut();
-        menu_mobile=false;
+        menu_mobile = false;
     });
 
     $("#search_main").keydown(function () {

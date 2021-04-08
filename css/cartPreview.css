@@ -1,0 +1,130 @@
+.cont_main_cartPreview{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.slider_cart_main{
+    height: 9px;
+    background-color: #E1E1E1;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.slider_cart_second{
+    background-color: #0043BA;
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}
+.text_order_cart{
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: "FuturaPTBook";
+}
+.text_add_card{
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "FuturaPTMedium";
+}
+.cont_cart_main{
+    margin-top: 30px;
+}
+.btnUlt{
+    font-size: 8px;
+    line-height: 10px;
+    font-family: "FuturaPTDemi";
+    background-color: #FFCE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    border-radius: 5px;
+}
+.cont_cart_prin{
+    padding-left: 15px !important;
+}
+.prop_cart{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.text_price_cart_real{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "FuturaPTBook";
+    text-decoration: line-through;
+}
+.text_price_cart_sale{
+    color:#EA0029;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "FuturaPTBook";
+}
+.main_total_cart{
+    margin-top: 60px;
+}
+.right_social{
+    text-align: right;
+}
+.total_cart{
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "FuturaPTBook";
+    color: #EA0029;
+}
+.total_cart_text{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "FuturaPTDemi";
+}
+.main_total_cart_cont{
+    margin-bottom: 20px;
+}
+.btn_send_cart{
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTDemi";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn_cart_paypal{
+    border-radius: 20px;
+    background-color: #FECD4C;
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTDemi";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn_cart_go{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    height: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTDemi";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+
+@media(max-width:600px){
+    .add_card_text{
+        margin-top: -30px;
+    }
+}
