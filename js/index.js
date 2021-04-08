@@ -156,7 +156,15 @@ $(document).ready(function () {
     $('.m_search_close').click(function () {
         $('#search_mobile_cont').fadeOut();
     });
+    $('.filters_mobile').click(function () {
+        $('.filters_mobile_main').fadeIn();
+    });
+    $('.close_filters_mobile').click(function () {
+        $('.filters_mobile_main').fadeOut();
+    });
 
+   
+    
     
 
     $('.showMenu').click(function () {

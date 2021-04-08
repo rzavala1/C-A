@@ -1303,6 +1303,18 @@ footer .collapsible-header{
 .back_mobile{
     display: none;
 }
+.filters_mobile_main{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background-color: #fff;
+    padding:35px;
+    z-index: 100005;
+}
 
 
 
@@ -1339,6 +1351,16 @@ footer .collapsible-header{
 
 
 @media(max-width:600px){
+    .color_filter .init div{
+        padding-right: 16px;
+    }
+    .filters_cont{
+        height: auto;
+        max-width: 100%;
+    }
+    .collad_header_text{
+        width: 100%;
+    }
     .back_mobile{
         display: block;
         margin-bottom: 55px;
