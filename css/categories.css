@@ -1,0 +1,276 @@
+
+.input_amount .select-wrapper input.select-dropdown{
+    height: 31px !important;
+    width: 43px !important;
+}
+.input_amount .select-wrapper{
+    width: 47px;
+}
+.bread{
+    background-color: #FFFFFF;
+    box-shadow: none;
+    padding:0px 55px;
+}
+.bread .breadcrumb{
+    color:#212121;
+    font-size: 16px;
+}
+.breadcrumb:before{
+    color:#212121;
+}
+.title_categories{
+    padding:0px 55px;
+    color:#000000;
+    font-family:"FuturaPTDemi";
+    font-size: 42px;
+    line-height: 32px;
+}
+.title_categories span{
+    color:#909090;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 32px;
+    font-family:"FuturaPTBook";
+}
+.card-image img{
+    cursor: pointer;
+}
+.filters{
+    padding: 0px 55px;
+}
+.clean{
+    text-decoration: underline;
+    font-size: 19px;
+    color:#212121;
+}
+.chips{
+    border-bottom:none;
+    padding-left: 15px !important;
+}
+.selectFilters .select-wrapper input.select-dropdown{
+    border: 1px solid #BFBFBF;
+    height: 40px;
+    padding: 0px 10px;
+    padding-right: 0px;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    color:#000000;
+    
+}
+.dropdown-content li>a:hover, .dropdown-content li>span:hover{
+    color:#fff;
+}
+.select-dropdown.dropdown-content li:hover{
+    color:#fff;
+    background-color: #000000;
+}
+.selectFilters .select-wrapper{
+    margin-top: 11px;
+}
+.input-field.col label{
+    left: 0;
+}
+.selectFilters label{
+    color:#212121;
+    font-size: 14px;
+    line-height: 17px;
+    font-family:"FuturaPTBook";
+    padding-bottom: 15px;
+}
+#model_detail_main{
+    display: none; 
+    position: fixed; 
+    z-index: 1000000; 
+    padding-top: 60px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    color:#575757;
+    display:none;
+}
+.model_detail{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 20px;
+  width: 832px;
+  height: 632px;
+  box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 30%);
+}
+.min_views img{
+    margin-bottom: 30px;
+}
+.max_view{
+    padding-left: 20px !important;
+}
+.des_detail_main{
+    padding-left: 30px !important;
+    width: 345px !important;
+}
+.text_detail{
+    font-size: 20px;
+    line-height: 26px;
+    font-family:"FuturaPTBook";
+    color: #000000;
+}
+.rate-hover-layer{
+    color:#0043BA;
+}
+.rate-select-layer{
+    color:#0043BA;
+}
+.rate-base-layer{
+    color:#BFBFBF;
+}
+.rating_main{
+    margin-top: 10px;
+}
+.num_rating{
+    font-size: 13px;
+    line-height: 18px;
+    font-family:"FuturaPTBook";
+    color: #000000;
+    border: 2px solid #BFBFBF;
+    border-radius: 5px;
+    text-align: center;
+    width: 26px !important;
+    height: 20px;
+    margin-left: 10px !important;
+}
+.res_rating{
+    font-size: 14px;
+    line-height: 20px;
+    font-family:"FuturaPTBook";
+    color: #6B6B6B;
+    margin-left: 15px !important;
+}
+.res_rating_write{
+    font-size: 14px;
+    line-height: 20px;
+    font-family:"FuturaPTBook";
+    color: #6B6B6B;
+    margin-left: 0px !important;
+    text-decoration: underline;
+}
+.instruccions_main_detail{
+    margin-top: 20px !important;
+    display: flex;
+    justify-content: flex-start;
+}
+.instruccions_main_detail .instruccion{
+    margin-right: 15px;
+    margin-left: 0px !important;
+}
+.price_main{
+    margin-top: 15px;
+}
+.price_main .price_text{
+    font-size: 18px;
+    line-height: 14px;
+    font-family:"FuturaPTBook";
+    color:#212121;
+    margin-right: 15px;
+}
+.price_main .price_real{
+    text-decoration:line-through;
+}
+.price_main .price_descuent{
+    color:#B6254B;
+}
+.mod_main{
+    font-size: 12px;
+    line-height: 16px;
+    font-family:"FuturaPTBook";
+    color:#979797;
+    margin-top: 15px;
+}
+hr{
+    margin-top: 25px;
+    border-top: 1px solid #DBDBDB;
+}
+.color_detail{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    font-family:"FuturaPTMedium";
+    color:#000000;
+}
+.colors_main{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.colors_main div{
+    margin-right: 10px;
+}
+.size_detail_main{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    font-family:"FuturaPTMedium";
+    color:#000000;
+}
+.size_guie{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 13px;
+    font-family:"FuturaPTBook";
+    color:#707070;
+    text-decoration: underline;
+    text-align: right;
+    cursor: pointer;
+}
+.sizes_cont{
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+}
+.amount_main{
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 21px;
+    font-family:"FuturaPTDemi";
+    color:#000000;
+    display: flex;
+}
+.amount_main .input_amount{
+    margin-left: 15px;
+}
+.input_amount{
+    width: 70px;
+    height: 50px;
+}
+.input_amount .select-dropdown{
+    border-radius: 5px !important;
+    border:1px solid #909090 !important;
+    background-color: #fff !important;
+}
+.input_amount{
+    margin-top: -19px;
+}
+.input_amount .select-wrapper span.caret{
+    color: #000000 !important;
+    z-index: 1;
+}
+.detail_btn{
+    margin-top: 15px;
+}
+#optGuie{
+    display: none;
+}
+.option_size_main{
+    height: 27px;
+}
+.option_size{
+    font-size: 18px;
+    line-height: 32px;
+    font-family:"FuturaPTDemi";
+    color:#000000;
+    border-bottom: 1px solid;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.img_size_main{
+    padding-top: 40px;
+    text-align: center;
+}
