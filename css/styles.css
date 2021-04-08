@@ -1351,7 +1351,6 @@ footer .collapsible-header{
 
 
 
-
 @media(max-width:600px){
     .mode_view .selectFilters .select-wrapper input.select-dropdown{
         border-radius: 0px !important;
@@ -1385,6 +1384,8 @@ footer .collapsible-header{
         height: 32px;
         display: flex;
         align-items: center;
+        font-size: 12px;
+        font-family: 'FuturaPTDemi';
     }
     .instruccion{
         margin-top: 10px;

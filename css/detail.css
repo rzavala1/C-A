@@ -194,3 +194,73 @@ hr{
     padding: 0px 112px !important;
     margin-top: 15px;
 }
+
+
+
+
+@media(max-width:600px){
+    .back_mobile{
+        margin-bottom: 0px;
+    }
+    .detail_images .col{
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .des_detail_main{
+        padding-left:0px !important;
+    }
+    .colors_main div{
+        margin-right: 15px;
+    }
+    .detail_images .s12{
+        display: flex !important;
+        justify-content: center !important;
+    }   
+    .res_rating_write{
+        margin-left: 15px !important;
+    }
+    .text_detail{
+        font-family: "FuturaPTDemi";
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .shared_option{
+        text-align: center;
+        padding-bottom: 20px !important;
+    }
+    .right_social{
+        text-align: right;
+    }
+    .center_social{
+        text-align: center;
+    }
+    .shared_images img{
+        width: 50px;
+    }
+    .social_main{
+        padding-bottom: 20px;
+    }
+    .detail_main_cont .tabs{
+        padding-left: 0px;
+    }
+    .indicator{
+        width: 50% !important;
+    }
+    .cont_detail_description{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+    .title_description{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .text_description{
+        margin-bottom: 20px;
+    }
+    .title_main{
+        font-size: 16px;
+        line-height: 32px;
+        font-family: "FuturaPTDemi";
+        margin-left: -20px; 
+    }
+}
