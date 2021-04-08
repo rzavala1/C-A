@@ -18,8 +18,8 @@ $(document).ready(function () {
     }
 
     $('#optSizeGuie').click(function () {
-        $('#optDetail').fadeOut(100);
-        $('#optGuie').fadeIn();
+            $('#optDetail').fadeOut(100);
+            $('#optGuie').fadeIn();
     });
 
     $('.modal_close_detail').click(function () {
@@ -31,7 +31,6 @@ $(document).ready(function () {
         $('#optDetail').fadeIn();
         $('#optGuie').fadeOut(100);
     });
-
 });
 
 

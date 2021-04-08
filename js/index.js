@@ -81,20 +81,22 @@ $(document).ready(function () {
         }
     });
 
-
+    $('.card-image').click(function () {
+        var widthScreen = $(window).width();
+        if(widthScreen>600){
+            //solo para versiones que no son mobile
+            if(!favorite){
+                $("#model_detail_main").fadeIn(100);
+                $("body").css("overflow","hidden");
+            }else{
+                favorite=false;
+            }
+        }
+     });
     
     $('.card-content').click(function () {
         window.location.href = "detail.html";
     });
-
-    $('.card-image').click(function () {
-        if(!favorite){
-            $("#model_detail_main").fadeIn(100);
-            $("body").css("overflow","hidden");
-        }else{
-            favorite=false;
-        }
-     });
 
     $('.arrowLeft').click(function () {
         $('.carousel_scroll').carousel('prev');
