@@ -151,7 +151,6 @@ $(document).ready(function () {
    
     $('.searchMobile').click(function () {
        $('#search_mobile_cont').fadeIn();
-       $("main").css("overflow","hidden");
     });
     $('.m_search_close').click(function () {
         $('#search_mobile_cont').fadeOut();
@@ -168,7 +167,6 @@ $(document).ready(function () {
     
 
     $('.showMenu').click(function () {
-        $("main").css("overflow","hidden");
         $('#menu_active_mobile').fadeIn();
         menu_mobile=true;
     });

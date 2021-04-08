@@ -1315,7 +1315,9 @@ footer .collapsible-header{
     padding:35px;
     z-index: 100005;
 }
-
+.m_filters_mode{
+    display: none;
+}
 
 
 
@@ -1351,6 +1353,19 @@ footer .collapsible-header{
 
 
 @media(max-width:600px){
+    .mode_view .selectFilters .select-wrapper input.select-dropdown{
+        border-radius: 0px !important;
+    }
+    .mode_view .m_filters .select-dropdown{
+        border-radius: 0px !important;
+    }
+    .chips{
+        margin-left: -15px !important;
+    }
+    .filter_text_mobile{
+        padding-left: 0px !important;
+        padding-bottom: 36px !important;
+    }
     .color_filter .init div{
         padding-right: 16px;
     }
@@ -1455,7 +1470,7 @@ footer .collapsible-header{
     }
     .title_filters{
         margin-top: -40px;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
     }
     .mode_mobile{
         display: none;
