@@ -96,12 +96,19 @@ $(document).ready(function () {
             }
         }
      });
-    
      
+     
+    $('#optSizeGuie').click(function () {
+       $('#model_detail_main').fadeIn();
+    });
+
+    $('.close_detail').click(function () {
+        $('#model_detail_main').fadeOut();
+     });
+
     $('.card-content').click(function () {
         window.location.href = "detail.html";
     });
-
     $('.btn_send_review').click(function () {
         window.location.href = "responseReview.html";
     });
