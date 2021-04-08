@@ -5,5 +5,9 @@ $(document).ready(function () {
         $('#optGuie').fadeIn();
     });
 
+    $('.btnWriteReview').click(function () {
+        window.location.href = "writeReview.html";
+    });
+    
 
 });

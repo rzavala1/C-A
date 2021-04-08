@@ -1,0 +1,129 @@
+.title_review{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "FuturaPTDemi"; 
+}
+.text_review{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "FuturaPTBook"; 
+}
+.form_review{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "FuturaPTBook";
+    margin-top: 15px;
+}
+.input_review{
+    background-color: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+}
+input[type=text]:not(.browser-default){
+    height: 40px;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom:0px;
+}
+.textare_review textarea{
+    background-color: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+    height: 109px;
+}
+[type="radio"]:checked{
+    opacity: 1;
+}
+[type="radio"]:not(:checked){
+    opacity: 1;
+}
+.radios_review{
+    margin-top: 30px;
+}
+.radio_text{
+    font-size: 16px;
+    line-height: 29px;
+    font-family: "FuturaPTBook";
+    margin-top: -5px;
+}
+.btn_add_review_img{
+    border-radius: 20px;
+    border: 1px solid;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTBook";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.text_add{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "FuturaPTBook";
+}
+.main_add_img{
+    margin-top: 15px;
+}
+.subtext_review{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "FuturaPTBook";
+    margin-top: 20px;
+}
+.btn_send_review{
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "FuturaPTDemi";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.email_review{
+    margin-top: 25px !important;
+}
+@media(max-width:600px){
+    .subtext_review{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .text_add{
+        text-align: right;
+    }
+    .textare_review textarea{
+        background-color: #F5F5F5;
+        border: 0px;
+        height: 130px;
+    }
+    .input_review{
+        background-color: #F5F5F5;
+        border: 0px;
+    }
+    .form_review{
+        font-size: 16px;
+        line-height: 26px;
+        font-family: "FuturaPTDemi";
+    }
+    .title_review{
+        font-size: 16px;
+        font-family: "FuturaPTMedium"; 
+    }
+    .text_review{
+        font-size: 14px;
+        line-height: 18px;
+        font-family: "FuturaPTBook"; 
+    }
+    .cont_main_review{
+        padding: 15px !important;
+    }
+    .img_review_mobile{
+        width: 108px;
+    }
+}
